@@ -1,0 +1,15 @@
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Debug\netstandard2.0\CRUD_Personas_BL.deps.json
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Debug\netstandard2.0\CRUD_Personas_BL.dll
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Debug\netstandard2.0\CRUD_Personas_BL.pdb
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Debug\netstandard2.0\CRUD_Personas_DAL.dll
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Debug\netstandard2.0\CRUD_Personas_Entities.dll
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Debug\netstandard2.0\CRUD_Personas_DAL.pdb
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Debug\netstandard2.0\CRUD_Personas_Entities.pdb
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\obj\Debug\netstandard2.0\CRUD_Personas_BL.csproj.AssemblyReference.cache
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\obj\Debug\netstandard2.0\CRUD_Personas_BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\obj\Debug\netstandard2.0\CRUD_Personas_BL.AssemblyInfoInputs.cache
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\obj\Debug\netstandard2.0\CRUD_Personas_BL.AssemblyInfo.cs
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\obj\Debug\netstandard2.0\CRUD_Personas_BL.csproj.CoreCompileInputs.cache
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\obj\Debug\netstandard2.0\CRUD_Personas_BL.csproj.CopyComplete
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\obj\Debug\netstandard2.0\CRUD_Personas_BL.dll
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\obj\Debug\netstandard2.0\CRUD_Personas_BL.pdb

@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="CRUD_Personas_BBDD_Azure_UWP.Views.VistaPersona"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CRUD_Personas_BBDD_Azure_UWP.ViewModels"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Page.DataContext>
+        <local:VistaPersonaVM/>
+    </Page.DataContext>
+    
+    <ListView ItemsSource="{Binding Personajes}">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <RelativePanel MinWidth="350" Height="50" >
+                    <TextBlock x:Name="nombre" Text="{Binding Nombre}" />
+                    <TextBlock x:Name="apellido" Text="{Binding Apellidos}" Margin="5,0" RelativePanel.RightOf="nombre" />
+                </RelativePanel>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</Page>

@@ -1,0 +1,134 @@
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\App.xbf
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\Views\MainPage.xbf
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\16-Insertar imagen en BBDD-UI.xr.xml
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\16-Insertar imagen en BBDD-UI.exe
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\16-Insertar imagen en BBDD-UI.pdb
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\resources.pri
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\AppxManifest.xml
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\Core\16-Insertar imagen en BBDD-UI.exe
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\Core\AppxManifest.xml
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\16-Insertar imagen en BBDD-UI.build.appxrecipe
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\System.Runtime.dll
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\16-Insertar imagen en BBDD-UI.csprojAssemblyReference.cache
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\App.g.i.cs
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\App.g.cs
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\Views\MainPage.g.i.cs
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\Views\MainPage.g.cs
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\XamlTypeInfo.g.cs
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\App.xaml
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\Views\MainPage.xaml
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\App.xbf
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\Views\MainPage.xbf
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\XamlSaveStateFile.xml
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\16-Insertar imagen en BBDD-UI.csproj.CoreCompileInputs.cache
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\16-Insertar imagen en BBDD-UI.csproj.CopyComplete
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\16-Insertar imagen en BBDD-UI.exe
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\16-Insertar imagen en BBDD-UI.pdb
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\ResourceHandlingTask.state
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\priconfig.xml
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\priconfig.xml.intermediate
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\unfiltered.layout.resfiles
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\filtered.layout.resfiles
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\filtered.layout.resfiles.intermediate
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\excluded.layout.resfiles
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\excluded.layout.resfiles.intermediate
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\resources.resfiles
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\resources.resfiles.intermediate
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\pri.resfiles
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\pri.resfiles.intermediate
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\qualifiers.txt
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\qualifiers.txt.intermediate
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+G:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\ProjectArchitectures.txt
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\16-Insertar imagen en BBDD-UI.csprojAssemblyReference.cache
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\App.g.i.cs
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\App.g.cs
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\Views\MainPage.g.i.cs
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\Views\MainPage.g.cs
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\App.xaml
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\Views\MainPage.xaml
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\App.xbf
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\Views\MainPage.xbf
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\16-Insertar imagen en BBDD-UI.exe
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\16-Insertar imagen en BBDD-UI.pdb
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\App.xbf
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\Views\MainPage.xbf
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\16-Insertar imagen en BBDD-UI.xr.xml
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\16-Insertar imagen en BBDD-UI.exe
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\16-Insertar imagen en BBDD-UI.pdb
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\resources.pri
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\AppxManifest.xml
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\Core\16-Insertar imagen en BBDD-UI.exe
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\Core\AppxManifest.xml
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\16-Insertar imagen en BBDD-UI.build.appxrecipe
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\System.Runtime.dll
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\XamlTypeInfo.g.cs
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\XamlSaveStateFile.xml
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\16-Insertar imagen en BBDD-UI.csproj.CoreCompileInputs.cache
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\16-Insertar imagen en BBDD-UI.csproj.CopyComplete
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\ResourceHandlingTask.state
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\priconfig.xml
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\priconfig.xml.intermediate
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\unfiltered.layout.resfiles
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\filtered.layout.resfiles
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\filtered.layout.resfiles.intermediate
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\excluded.layout.resfiles
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\excluded.layout.resfiles.intermediate
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\resources.resfiles
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\resources.resfiles.intermediate
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\pri.resfiles
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\pri.resfiles.intermediate
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\qualifiers.txt
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\qualifiers.txt.intermediate
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\ProjectArchitectures.txt
+F:\CopiaCasa\Instituto\DAM\DI\Curso 2017-18\DI-2017-18-Git\2018-19\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758480200000000.json
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\App.xbf
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\Views\MainPage.xbf
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\16-Insertar imagen en BBDD-UI.xr.xml
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\16-Insertar imagen en BBDD-UI.exe
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\16-Insertar imagen en BBDD-UI.pdb
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\resources.pri
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\AppxManifest.xml
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\Core\16-Insertar imagen en BBDD-UI.exe
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\Core\AppxManifest.xml
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\16-Insertar imagen en BBDD-UI.build.appxrecipe
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\System.Runtime.dll
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\bin\x86\Debug\Microsoft.UI.Xaml.Markup.winmd
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\16-Insertar imagen en BBDD-UI.csproj.AssemblyReference.cache
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\App.g.i.cs
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\App.g.cs
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\Views\MainPage.g.i.cs
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\Views\MainPage.g.cs
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\XamlTypeInfo.g.cs
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\App.xaml
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\Views\MainPage.xaml
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\App.xbf
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\Views\MainPage.xbf
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\XamlSaveStateFile.xml
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\16-Insertar imagen en BBDD-UI.csproj.CoreCompileInputs.cache
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\16-Insertar imagen en BBDD-UI.csproj.CopyComplete
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\16-Insertar imagen en BBDD-UI.exe
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\16-Insertar imagen en BBDD-UI.pdb
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\ResourceHandlingTask.state
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\priconfig.xml
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\priconfig.xml.intermediate
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\unfiltered.layout.resfiles
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\unfiltered.layout.resfiles.intermediate
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\filtered.layout.resfiles
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\filtered.layout.resfiles.intermediate
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\excluded.layout.resfiles
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\excluded.layout.resfiles.intermediate
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\resources.resfiles
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\resources.resfiles.intermediate
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\pri.resfiles
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\pri.resfiles.intermediate
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\qualifiers.txt
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\qualifiers.txt.intermediate
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\ProjectArchitectures.txt
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758480200000000.json
+D:\GS DAM\Repositorios\MiPrimerCRUD\16-Insertar imagen en BBDD\16-Insertar imagen en BBDD-UI\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885238160000000.json

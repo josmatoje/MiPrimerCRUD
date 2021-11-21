@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "fd90e00c-3fe4-4eee-815c-82d6721cae7c": {
+      "ProjectGuid": "fd90e00c-3fe4-4eee-815c-82d6721cae7c",
+      "DisplayName": "CRUD_Personas_Entities",
+      "ColorIndex": 0
+    },
+    "9cb9111b-45df-4690-97dd-d0aed8f14f7c": {
+      "ProjectGuid": "9cb9111b-45df-4690-97dd-d0aed8f14f7c",
+      "DisplayName": "CRUD_Personas_DAL",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    },
+    "2ee1a6a8-94f1-4205-9b55-017dcbecc5c0": {
+      "ProjectGuid": "2ee1a6a8-94f1-4205-9b55-017dcbecc5c0",
+      "DisplayName": "CRUD_Personas_BBDD_Azure_ASP.NET(MVC)",
+      "ColorIndex": 2
+    },
+    "647235e0-0ba9-4945-9776-a42b68e4cf6b": {
+      "ProjectGuid": "647235e0-0ba9-4945-9776-a42b68e4cf6b",
+      "DisplayName": "CRUD_Personas_BL",
+      "ColorIndex": 3
+    },
+    "4ae0d975-a182-47ac-bf79-fea67af38ca3": {
+      "ProjectGuid": "4ae0d975-a182-47ac-bf79-fea67af38ca3",
+      "DisplayName": "CRUD_Personas_BBDD_Azure_UWP",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

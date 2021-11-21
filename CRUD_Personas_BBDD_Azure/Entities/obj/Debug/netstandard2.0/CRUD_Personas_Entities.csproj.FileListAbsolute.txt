@@ -1,0 +1,9 @@
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\bin\Debug\netstandard2.0\CRUD_Personas_Entities.deps.json
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\bin\Debug\netstandard2.0\CRUD_Personas_Entities.dll
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\bin\Debug\netstandard2.0\CRUD_Personas_Entities.pdb
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Debug\netstandard2.0\CRUD_Personas_Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Debug\netstandard2.0\CRUD_Personas_Entities.AssemblyInfoInputs.cache
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Debug\netstandard2.0\CRUD_Personas_Entities.AssemblyInfo.cs
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Debug\netstandard2.0\CRUD_Personas_Entities.csproj.CoreCompileInputs.cache
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Debug\netstandard2.0\CRUD_Personas_Entities.dll
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Debug\netstandard2.0\CRUD_Personas_Entities.pdb

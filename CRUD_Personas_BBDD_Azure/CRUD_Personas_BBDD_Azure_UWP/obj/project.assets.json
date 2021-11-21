@@ -2,6 +2,13 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.17763": {
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -402,6 +409,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "CRUD_Personas_Entities": "1.0.0",
+          "EntityFramework": "6.4.4",
           "System.Data.SqlClient": "4.8.3"
         },
         "compile": {
@@ -423,6 +431,13 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-arm": {
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -986,6 +1001,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "CRUD_Personas_Entities": "1.0.0",
+          "EntityFramework": "6.4.4",
           "System.Data.SqlClient": "4.8.3"
         },
         "compile": {
@@ -1007,6 +1023,13 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-arm-aot": {
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -1571,6 +1594,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "CRUD_Personas_Entities": "1.0.0",
+          "EntityFramework": "6.4.4",
           "System.Data.SqlClient": "4.8.3"
         },
         "compile": {
@@ -1592,6 +1616,13 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-arm64-aot": {
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -2156,6 +2187,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "CRUD_Personas_Entities": "1.0.0",
+          "EntityFramework": "6.4.4",
           "System.Data.SqlClient": "4.8.3"
         },
         "compile": {
@@ -2177,6 +2209,13 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-x64": {
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -2740,6 +2779,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "CRUD_Personas_Entities": "1.0.0",
+          "EntityFramework": "6.4.4",
           "System.Data.SqlClient": "4.8.3"
         },
         "compile": {
@@ -2761,6 +2801,13 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-x64-aot": {
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -3325,6 +3372,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "CRUD_Personas_Entities": "1.0.0",
+          "EntityFramework": "6.4.4",
           "System.Data.SqlClient": "4.8.3"
         },
         "compile": {
@@ -3346,6 +3394,13 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-x86": {
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -3909,6 +3964,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "CRUD_Personas_Entities": "1.0.0",
+          "EntityFramework": "6.4.4",
           "System.Data.SqlClient": "4.8.3"
         },
         "compile": {
@@ -3930,6 +3986,13 @@
       }
     },
     "UAP,Version=v10.0.17763/win10-x86-aot": {
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
         "type": "package",
         "dependencies": {
@@ -4494,6 +4557,7 @@
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "CRUD_Personas_Entities": "1.0.0",
+          "EntityFramework": "6.4.4",
           "System.Data.SqlClient": "4.8.3"
         },
         "compile": {
@@ -4516,6 +4580,63 @@
     }
   },
   "libraries": {
+    "EntityFramework/6.4.4": {
+      "sha512": "yj1+/4tci7Panu3jKDHYizxwVm0Jvm7b7m057b5h4u8NUHGCR8WIWirBTw+8EptRffwftIWPBeIRGNKD1ewEMQ==",
+      "type": "package",
+      "path": "entityframework/6.4.4",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/EntityFramework.DefaultItems.props",
+        "build/EntityFramework.props",
+        "build/EntityFramework.targets",
+        "build/Microsoft.Data.Entity.Build.Tasks.dll",
+        "build/netcoreapp3.0/EntityFramework.props",
+        "build/netcoreapp3.0/EntityFramework.targets",
+        "buildTransitive/EntityFramework.props",
+        "buildTransitive/EntityFramework.targets",
+        "buildTransitive/netcoreapp3.0/EntityFramework.props",
+        "buildTransitive/netcoreapp3.0/EntityFramework.targets",
+        "content/net40/App.config.install.xdt",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.install.xdt",
+        "content/net40/Web.config.transform",
+        "entityframework.6.4.4.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "lib/netstandard2.1/EntityFramework.SqlServer.dll",
+        "lib/netstandard2.1/EntityFramework.SqlServer.xml",
+        "lib/netstandard2.1/EntityFramework.dll",
+        "lib/netstandard2.1/EntityFramework.xml",
+        "tools/EntityFramework6.PS2.psd1",
+        "tools/EntityFramework6.PS2.psm1",
+        "tools/EntityFramework6.psd1",
+        "tools/EntityFramework6.psm1",
+        "tools/about_EntityFramework6.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/net40/any/ef6.exe",
+        "tools/net40/any/ef6.pdb",
+        "tools/net40/win-x86/ef6.exe",
+        "tools/net40/win-x86/ef6.pdb",
+        "tools/net45/any/ef6.exe",
+        "tools/net45/any/ef6.pdb",
+        "tools/net45/win-x86/ef6.exe",
+        "tools/net45/win-x86/ef6.pdb",
+        "tools/netcoreapp3.0/any/ef6.dll",
+        "tools/netcoreapp3.0/any/ef6.pdb",
+        "tools/netcoreapp3.0/any/ef6.runtimeconfig.json"
+      ]
+    },
     "Microsoft.Net.Native.Compiler/2.2.10-rel-29722-00": {
       "sha512": "RvrUhS53oMQfDRhz8CnV+d2RXnvyc7mqBJtcXpWhIHI36jEZwepOke4wLfbOQQzpyVauFWGu+jkQSzYNxpHJQA==",
       "type": "package",
@@ -9176,7 +9297,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jmmata\\.nuget\\packages\\": {},
+    "C:\\Users\\josem\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
@@ -9184,11 +9305,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\jmmata\\SGEMP\\CRUD_Personas_BBDD_Azure\\CRUD_Personas_BBDD_Azure_UWP\\CRUD_Personas_BBDD_Azure_UWP.csproj",
+      "projectUniqueName": "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\CRUD_Personas_BBDD_Azure_UWP\\CRUD_Personas_BBDD_Azure_UWP.csproj",
       "projectName": "CRUD_Personas_BBDD_Azure_UWP",
-      "projectPath": "D:\\jmmata\\SGEMP\\CRUD_Personas_BBDD_Azure\\CRUD_Personas_BBDD_Azure_UWP\\CRUD_Personas_BBDD_Azure_UWP.csproj",
-      "packagesPath": "C:\\Users\\jmmata\\.nuget\\packages\\",
-      "outputPath": "D:\\jmmata\\SGEMP\\CRUD_Personas_BBDD_Azure\\CRUD_Personas_BBDD_Azure_UWP\\obj\\",
+      "projectPath": "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\CRUD_Personas_BBDD_Azure_UWP\\CRUD_Personas_BBDD_Azure_UWP.csproj",
+      "packagesPath": "C:\\Users\\josem\\.nuget\\packages\\",
+      "outputPath": "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\CRUD_Personas_BBDD_Azure_UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -9197,7 +9318,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\jmmata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\josem\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -9212,11 +9333,11 @@
       "frameworks": {
         "uap10.0.17763": {
           "projectReferences": {
-            "D:\\jmmata\\SGEMP\\CRUD_Personas_BBDD_Azure\\BussinesLogic\\CRUD_Personas_BL.csproj": {
-              "projectPath": "D:\\jmmata\\SGEMP\\CRUD_Personas_BBDD_Azure\\BussinesLogic\\CRUD_Personas_BL.csproj"
+            "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\BussinesLogic\\CRUD_Personas_BL.csproj": {
+              "projectPath": "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\BussinesLogic\\CRUD_Personas_BL.csproj"
             },
-            "D:\\jmmata\\SGEMP\\CRUD_Personas_BBDD_Azure\\Entities\\CRUD_Personas_Entities.csproj": {
-              "projectPath": "D:\\jmmata\\SGEMP\\CRUD_Personas_BBDD_Azure\\Entities\\CRUD_Personas_Entities.csproj"
+            "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\Entities\\CRUD_Personas_Entities.csproj": {
+              "projectPath": "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\Entities\\CRUD_Personas_Entities.csproj"
             }
           }
         }
