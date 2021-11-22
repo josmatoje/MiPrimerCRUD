@@ -8,10 +8,10 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <NavigationView x:Name="EleccionPrincipal">
+    <NavigationView x:Name="EleccionPrincipal" ItemInvoked="EleccionPrincipal_ItemInvoked">
         <NavigationView.MenuItems>
-            <NavigationViewItem Icon="People" Content="Personas"/>
-            <NavigationViewItem Icon="Manage" Content="Departamentos"/>
+            <NavigationViewItem x:Name="vistaPersonas" Icon="People" Content="Personas"/>
+            <NavigationViewItem x:Name="vistaDepartamentos" Icon="Manage" Content="Departamentos"/>
         </NavigationView.MenuItems>
         <Frame x:Name="contenedor"/>
     </NavigationView>

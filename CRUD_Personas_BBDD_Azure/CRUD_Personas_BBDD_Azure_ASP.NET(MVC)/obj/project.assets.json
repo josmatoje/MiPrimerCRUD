@@ -1080,25 +1080,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\josem\\.nuget\\packages\\": {},
+    "C:\\Users\\jmmata\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\\CRUD_Personas_BBDD_Azure_ASP.NET(MVC).csproj",
+      "projectUniqueName": "D:\\jmmata\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\\CRUD_Personas_BBDD_Azure_ASP.NET(MVC).csproj",
       "projectName": "CRUD_Personas_BBDD_Azure_ASP.NET(MVC)",
-      "projectPath": "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\\CRUD_Personas_BBDD_Azure_ASP.NET(MVC).csproj",
-      "packagesPath": "C:\\Users\\josem\\.nuget\\packages\\",
-      "outputPath": "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\\obj\\",
+      "projectPath": "D:\\jmmata\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\\CRUD_Personas_BBDD_Azure_ASP.NET(MVC).csproj",
+      "packagesPath": "C:\\Users\\jmmata\\.nuget\\packages\\",
+      "outputPath": "D:\\jmmata\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\josem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jmmata\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -1114,11 +1114,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\BussinesLogic\\CRUD_Personas_BL.csproj": {
-              "projectPath": "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\BussinesLogic\\CRUD_Personas_BL.csproj"
+            "D:\\jmmata\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\BussinesLogic\\CRUD_Personas_BL.csproj": {
+              "projectPath": "D:\\jmmata\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\BussinesLogic\\CRUD_Personas_BL.csproj"
             },
-            "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\Entities\\CRUD_Personas_Entities.csproj": {
-              "projectPath": "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\Entities\\CRUD_Personas_Entities.csproj"
+            "D:\\jmmata\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\Entities\\CRUD_Personas_Entities.csproj": {
+              "projectPath": "D:\\jmmata\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\Entities\\CRUD_Personas_Entities.csproj"
             }
           }
         }

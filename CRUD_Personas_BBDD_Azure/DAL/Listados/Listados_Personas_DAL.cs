@@ -3,18 +3,17 @@ using DAL;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Text;
 
 namespace CRUD_Personas_DAL.Listados
 {
-    public class Listados_DAL
+    public class Listados_Personas_DAL
     {
         private static clsMyConexion conexionDAL = new clsMyConexion();
 
         /// <summary>
         /// Cabecera: public static List<clsPersona> Listado_Personas_DAL()
         /// Descripcion: Devuelve el conjunto de personas que se encuentran en la base de datos a la q se conecta
-        /// Precondiciones: Las personas de la base de datos siguen la estructura de la clase clsPersona
+        /// Precondiciones: Ninguna
         /// Postcondiciones: todos los datos de la lista existen en la base de datos
         /// </summary>
         /// <returns> El listado de todas las personas que existen en la base de datos</returns>
@@ -33,8 +32,7 @@ namespace CRUD_Personas_DAL.Listados
                 lector = instruccion.ExecuteReader();
                 if (lector.HasRows)
                 {
-                    while (lector.Read())
-                    {
+                    while (lector.Read()){
                         oPersona = generaPersonaLeida(lector);
                         personas.Add(oPersona);
                     }
@@ -44,58 +42,19 @@ namespace CRUD_Personas_DAL.Listados
             }
             catch (SqlException e)
             {
-
+                throw;
             }
 
             return personas;
         }
         /// <summary>
-        /// Cabecera: public static List<clsDepartamento> Listado_Departamentos_DAL()
-        /// Descripcion: Devuelve el conjunto de departamentos que se encuentran en la base de datos a la q se conecta
-        /// Precondiciones: Las personas de la base de datos siguen la estructura de la clase clsDepartamento
-        /// Postcondiciones: todos los datos de la lista existen en la base de datos
+        /// Cabecera: public static clsPersona Personas_DAL(int idPersona)
+        /// Descripcion: Devuelve la persona que se encuentran en la base de datos a la q se conecta correspondiente con el id solicitado.
+        /// Precondiciones: idPersona mayor que cero
+        /// Postcondiciones: asociado al id se devuelve una persona
         /// </summary>
-        /// <returns> El listado de todos los departamentos que existen en la base de datos</returns>
-        public static List<clsDepartamento> Listado_Departamentos_DAL()
-        {
-            List<clsDepartamento> personas = new List<clsDepartamento>();
-            SqlCommand instruccion = new SqlCommand();
-            SqlDataReader lector;
-            clsDepartamento oDepartamento;
-
-            try
-            {
-                conexionDAL.abrirConexion();
-                instruccion.CommandText = "SELECT * FROM Departamentos";
-                instruccion.Connection = conexionDAL.SqlConexion;
-                lector = instruccion.ExecuteReader();
-                if (lector.HasRows)
-                {
-                    while (lector.Read())
-                    {
-                        oDepartamento = new clsDepartamento ((int)lector["IDPersona"],(string)lector["nombrePersona"]);
-                        personas.Add(oDepartamento);
-                    }
-
-                }
-                lector.Close();
-                conexionDAL.cerrarConexion();
-            }
-            catch (SqlException e)
-            {
-
-            }
-
-            return personas;
-        }
-        /// <summary>
-        /// Cabecera: public static List<clsPersona> Listado_Personas_DAL()
-        /// Descripcion: Devuelve el conjunto de personas que se encuentran en la base de datos a la q se conecta
-        /// Precondiciones: Las personas de la base de datos siguen la estructura de la clase clsPersona
-        /// Postcondiciones: todos los datos de la lista existen en la base de datos
-        /// </summary>
-        /// <returns> El listado de todas las personas que existen en la base de datos</returns>
-        public static clsPersona Personas_DAL(int idPersona)
+        /// <returns> La persona que existen en la base de datos</returns>
+        public static clsPersona PersonaIndicada_DAL(int idPersona)
         {
             clsPersona oPersona = new clsPersona();
             SqlCommand instruccion = new SqlCommand();
@@ -104,7 +63,8 @@ namespace CRUD_Personas_DAL.Listados
             try
             {
                 conexionDAL.abrirConexion();
-                instruccion.CommandText = "SELECT * FROM Personas";
+                instruccion.CommandText = @"SELECT * FROM Personas WHERE IDPersona= @idPersona";
+                instruccion.Parameters.AddWithValue("@idPersona", idPersona);
                 instruccion.Connection = conexionDAL.SqlConexion;
                 lector = instruccion.ExecuteReader();
                 if (lector.HasRows)
@@ -117,17 +77,18 @@ namespace CRUD_Personas_DAL.Listados
             }
             catch (SqlException e)
             {
-
+                throw;
             }
-
             return oPersona;
         }
         /// <summary>
         /// Cabecera: private static clsPersona generaPersonaLeida(SqlDataReader lector)
-        /// 
+        /// Descripcion: Devuelve una persona leida por un lector
+        /// Precondiciones: el SqlDataReader debe haber leido una fila de la consulta realizada
+        /// Postcondiciones: la persona existe en la base de datos
         /// </summary>
-        /// <param name="lector"></param>
-        /// <returns></returns>
+        /// <param name="lector"> que ha leido una fila de la consulta previamente realizada</param>
+        /// <returns>una persona que se encuentra en la base de datos</returns>
         private static clsPersona generaPersonaLeida(SqlDataReader lector)
         {
             clsPersona oPersona = new clsPersona();
@@ -137,7 +98,7 @@ namespace CRUD_Personas_DAL.Listados
             oPersona.FechaNacimiento = (DateTime)lector["fechaNacimiento"];
             oPersona.Telefono = (string)lector["telefono"];
             oPersona.Direccion = (string)lector["direccion"];
-            oPersona.idDepartamento = (int)lector["IDDepartamento"];
+            oPersona.IdDepartamento = (int)lector["IDDepartamento"];
             if (lector["Foto"] != System.DBNull.Value)
                 oPersona.Foto = (Byte[])lector["Foto"];
             return oPersona;

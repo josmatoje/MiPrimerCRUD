@@ -119,6 +119,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\Utilidades\clsVMBase.cs" />
+    <Compile Include="ViewModels\Utilidades\DelegateCommand.cs" />
     <Compile Include="ViewModels\VistaPersonaVM.cs" />
     <Compile Include="Views\Bienvenida.xaml.cs">
       <DependentUpon>Bienvenida.xaml</DependentUpon>

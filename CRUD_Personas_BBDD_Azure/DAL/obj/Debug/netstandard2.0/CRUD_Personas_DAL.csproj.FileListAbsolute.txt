@@ -11,3 +11,15 @@ D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netst
 D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRUD_Personas_DAL.csproj.CopyComplete
 D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRUD_Personas_DAL.dll
 D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRUD_Personas_DAL.pdb
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\bin\Debug\netstandard2.0\CRUD_Personas_DAL.deps.json
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\bin\Debug\netstandard2.0\CRUD_Personas_DAL.dll
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\bin\Debug\netstandard2.0\CRUD_Personas_DAL.pdb
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\bin\Debug\netstandard2.0\CRUD_Personas_Entities.dll
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\bin\Debug\netstandard2.0\CRUD_Personas_Entities.pdb
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRUD_Personas_DAL.csproj.AssemblyReference.cache
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRUD_Personas_DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRUD_Personas_DAL.AssemblyInfoInputs.cache
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRUD_Personas_DAL.AssemblyInfo.cs
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRUD_Personas_DAL.csproj.CoreCompileInputs.cache
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRUD_Personas_DAL.dll
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRUD_Personas_DAL.pdb

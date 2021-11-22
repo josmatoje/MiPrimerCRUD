@@ -16,5 +16,6 @@ namespace CRUD_Personas_BL
         {
             return Listados_DAL.Listado_Departamentos_DAL();
         }
+        public static int 
     }
 }

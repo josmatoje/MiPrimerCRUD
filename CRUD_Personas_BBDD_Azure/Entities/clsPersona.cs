@@ -12,7 +12,7 @@ namespace CRUD_Personas_Entities
         public string Direccion { get; set; }
         public string Telefono { get; set; }
         public Byte[] Foto { get; set; }
-        public int idDepartamento { get; set; }
+        public int IdDepartamento { get; set; }
         #endregion
         #region cosntructores
         public clsPersona(){}//Constructor vacio para rellenar con valores

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CRUD_Personas_BBDD_Azure_UWP.Views;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +26,19 @@ namespace CRUD_Personas_BBDD_Azure_UWP
         public MainPage()
         {
             this.InitializeComponent();
+            contenedor.Navigate(typeof(Bienvenida));
+        }
+
+        private void EleccionPrincipal_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
+        {
+            NavigationViewItem paginaSeleccionada = (NavigationViewItem)sender.SelectedItem;
+            switch (paginaSeleccionada.Tag)
+            {
+                case "vistapersonas": contenedor.Navigate(typeof(VistaPersona));
+                    break;
+                case "vistaDepartamentos": contenedor.Navigate(typeof(VistaDepartamentos));
+                    break;
+            }
         }
     }
 }
