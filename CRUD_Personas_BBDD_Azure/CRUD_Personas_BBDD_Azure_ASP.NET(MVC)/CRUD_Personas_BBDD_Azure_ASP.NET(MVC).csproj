@@ -6,12 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BussinesLogic\CRUD_Personas_BL.csproj" />
-    <ProjectReference Include="..\Entities\CRUD_Personas_Entities.csproj" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\ViewModels\" />
+    <ProjectReference Include="..\BussinesLogic\CRUD_Personas_BL.csproj" />
+    <ProjectReference Include="..\Entities\CRUD_Personas_Entities.csproj" />
   </ItemGroup>
 
 </Project>

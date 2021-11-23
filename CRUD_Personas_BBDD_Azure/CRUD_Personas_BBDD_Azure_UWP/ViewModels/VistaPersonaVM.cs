@@ -2,6 +2,7 @@
 using CRUD_Personas_Entities;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,35 +12,77 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
 {
     public class VistaPersonaVM : clsVMBase
     {
+        #region atributos
+        private DelegateCommand buscador;
         private DelegateCommand eliminador;
-        private List<clsPersona> listadoPersonas;
+        private ObservableCollection<clsPersona> listaPersonaCompleto;
+        private ObservableCollection<clsPersona> listaPersonaOfrecido;
+        private string textBoxBuscar;
         private clsPersona personaSeleccionada;
-
+        #endregion
+        #region constructor
         public VistaPersonaVM()
         {
+            buscador = new DelegateCommand(Buscar, SePuedeBuscar);
             eliminador = new DelegateCommand(Eliminar, SePuedeEliminarar);
-            ListadoPersonas = BusinessLogicLayer.Listado_Personas_BL();
+            ListaPersonaCompleto = new ObservableCollection<clsPersona>(BusinessLogicLayer.Listado_Personas_BL());
+            ListaPersonaOfrecido = ListaPersonaCompleto;
         }
-
-        public List<clsPersona> ListadoPersonas { get => listadoPersonas; set => listadoPersonas = value; }
-        public clsPersona PersonaSeleccionada { get => personaSeleccionada; set => personaSeleccionada = value; }
-        public DelegateCommand Eliminador { get => eliminador; set => eliminador = value; }
-
+        #endregion
+        #region propiedades publicas
+        public DelegateCommand Buscador { get => buscador; }
+        public DelegateCommand Eliminador { get => eliminador; }
+        public ObservableCollection<clsPersona> ListaPersonaCompleto { get => listaPersonaCompleto; set => listaPersonaCompleto = value; }
+        public ObservableCollection<clsPersona> ListaPersonaOfrecido { get => listaPersonaOfrecido; set => listaPersonaOfrecido = value; }
+        public string TextBoxBuscar
+        {
+            get => textBoxBuscar;
+            set
+            {
+                textBoxBuscar = value;
+                if (String.IsNullOrEmpty(value))
+                {
+                    listaPersonaOfrecido = listaPersonaCompleto;
+                    NotifyPropertyChanged("ListaPersonaOfrecido");
+                }
+                buscador.RaiseCanExecuteChanged();
+            }
+        }
+        public clsPersona PersonaSeleccionada
+        {
+            get => personaSeleccionada;
+            set
+            {
+                personaSeleccionada = value;
+                eliminador.RaiseCanExecuteChanged();
+            }
+        }
+        #endregion
+        #region propiedades privadas
+        private void Buscar()
+        {
+            listaPersonaOfrecido = new ObservableCollection<clsPersona>(from personas in listaPersonaCompleto
+                                                                        where personas.Nombre.ToLower().Contains(textBoxBuscar) ||
+                                                                                personas.Apellidos.ToLower().Contains(textBoxBuscar)
+                                                                        select personas);
+            NotifyPropertyChanged("ListaPersonaOfrecido");
+        }
+        private bool SePuedeBuscar()
+        {   
+            return !String.IsNullOrEmpty(textBoxBuscar);
+        }
         private void Eliminar()
         {
 
-            listadoPersonas.Remove(personaSeleccionada);
-            //Mejor actualizar de la completa
-            if (listadoPersonas.Contains(personaSeleccionada))
-                listadoPersonas.Remove(personaSeleccionada);
+            ListaPersonaCompleto.Remove(personaSeleccionada);
+            if (ListaPersonaOfrecido.Contains(personaSeleccionada))
+                ListaPersonaOfrecido.Remove(personaSeleccionada);
         }
 
         private bool SePuedeEliminarar()
-        {   //Texto distinto de vacio y null
+        {   
             return !(personaSeleccionada is null);
         }
-
-
-
+        #endregion
     }
 }

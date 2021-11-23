@@ -10,12 +10,12 @@ namespace CRUD_Personas_BL
     {
         public static List<clsPersona> Listado_Personas_BL()
         {
-            return Listados_DAL.Listado_Personas_DAL();
+            return Listados_Personas_DAL.Listado_Personas_DAL();
         }
         public static List<clsDepartamento> Listado_Departamentos_BL()
         {
-            return Listados_DAL.Listado_Departamentos_DAL();
+            return Listados_Departamentos_DAL.Listado_Departamentos_DAL();
         }
-        public static int 
+         
     }
 }

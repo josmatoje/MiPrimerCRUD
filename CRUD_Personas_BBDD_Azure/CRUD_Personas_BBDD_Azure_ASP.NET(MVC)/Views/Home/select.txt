@@ -1,0 +1,8 @@
+﻿<select name="IDDepartamento">
+    @foreach (CRUD_Personas_Entities.clsDepartamento dpto in Model.)
+                {
+                        < option value = "@dpto.ID"
+                             selected = @if() > @dpto.Nombre </ option >
+
+                }
+</select>

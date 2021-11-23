@@ -27,7 +27,7 @@ namespace CRUD_Personas_DAL.Listados
             try
             {
                 conexionDAL.abrirConexion();
-                instruccion.CommandText = "SELECT * FROM Personas";
+                instruccion.CommandText = "SELECT IDPersona, nombrePersona, apellidosPersona, fechaNacimiento, telefono, direccion, IDDepartamento, Foto FROM Personas";
                 instruccion.Connection = conexionDAL.SqlConexion;
                 lector = instruccion.ExecuteReader();
                 if (lector.HasRows)
@@ -63,7 +63,8 @@ namespace CRUD_Personas_DAL.Listados
             try
             {
                 conexionDAL.abrirConexion();
-                instruccion.CommandText = @"SELECT * FROM Personas WHERE IDPersona= @idPersona";
+                instruccion.CommandText = @"SELECT IDPersona, nombrePersona, apellidosPersona, fechaNacimiento, telefono, direccion, IDDepartamento, Foto FROM Personas 
+                                            WHERE IDPersona= @idPersona";
                 instruccion.Parameters.AddWithValue("@idPersona", idPersona);
                 instruccion.Connection = conexionDAL.SqlConexion;
                 lector = instruccion.ExecuteReader();
@@ -95,12 +96,15 @@ namespace CRUD_Personas_DAL.Listados
             oPersona.Id = (int)lector["IDPersona"];
             oPersona.Nombre = (string)lector["nombrePersona"];
             oPersona.Apellidos = (string)lector["apellidosPersona"];
-            oPersona.FechaNacimiento = (DateTime)lector["fechaNacimiento"];
+            if (lector["Foto"] != System.DBNull.Value)
+                oPersona.FechaNacimiento = (DateTime)lector["fechaNacimiento"];
             oPersona.Telefono = (string)lector["telefono"];
             oPersona.Direccion = (string)lector["direccion"];
             oPersona.IdDepartamento = (int)lector["IDDepartamento"];
             if (lector["Foto"] != System.DBNull.Value)
                 oPersona.Foto = (Byte[])lector["Foto"];
+            DateTime time = new DateTime();
+            Console.WriteLine(time);
             return oPersona;
         }
     }

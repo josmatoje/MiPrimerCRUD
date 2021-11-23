@@ -28,17 +28,15 @@ namespace CRUD_Personas_DAL.Listados
             try
             {
                 conexionDAL.abrirConexion();
-                instruccion.CommandText = "SELECT * FROM Departamentos";
+                instruccion.CommandText = "SELECT IdDepartamento, nombreDepartamento FROM Departamentos";
                 instruccion.Connection = conexionDAL.SqlConexion;
                 lector = instruccion.ExecuteReader();
                 if (lector.HasRows)
                 {
-                    do
-                    {
+                    while (lector.Read()){
                         oDepartamento = new clsDepartamento((int)lector["IDDepartamento"], (string)lector["nombreDepartamento"]);
                         departamentos.Add(oDepartamento);
-                    } while (lector.Read());
-
+                    }
                 }
                 lector.Close();
                 conexionDAL.cerrarConexion();
@@ -66,7 +64,7 @@ namespace CRUD_Personas_DAL.Listados
             try
             {
                 conexionDAL.abrirConexion();
-                instruccion.CommandText = @"SELECT * FROM Departamentos WHERE IDDEpartamento= @idDepartamento";
+                instruccion.CommandText = @"SELECT IdDepartamento, nombreDepartamento FROM Departamentos WHERE IDDEpartamento= @idDepartamento";
                 instruccion.Parameters.AddWithValue("@idDepartamento", idDepartamento);
                 instruccion.Connection = conexionDAL.SqlConexion;
                 lector = instruccion.ExecuteReader();

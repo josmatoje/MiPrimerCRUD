@@ -8,11 +8,14 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Frame.DataContext>
+    <!--<Frame.DataContext>
         <vm:VistaPersonaVM/>
-    </Frame.DataContext>
+    </Frame.DataContext>-->
     <RelativePanel>
-        <ListView ItemsSource="{Binding Personajes}" MinWidth="300" RelativePanel.AlignBottomWithPanel="True" BorderBrush="Black">
+        <TextBox x:Name="buscador" MinWidth="300" Text="{Binding TextBoxBuscar, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" RelativePanel.AlignTopWithPanel="True" PlaceholderText="Buscar" Width="200" Margin="20,20,20,0"/>
+        <AppBarButton x:Name="find" Icon="Find" Command="{Binding Buscador}"  RelativePanel.RightOf="buscador" RelativePanel.AlignVerticalCenterWith="buscador"/>
+        <AppBarButton x:Name="Eliminar" Icon="Delete" Label="eliminar" Command="{Binding Eliminador}" RelativePanel.Below="find" RelativePanel.AlignLeftWith="find"/>
+        <ListView ItemsSource="{Binding ListaPersonaOfrecido}"  BorderBrush="Black" Margin="20" RelativePanel.Below="buscador" RelativePanel.AlignBottomWithPanel="True" RelativePanel.AlignLeftWithPanel="True" RelativePanel.LeftOf="Eliminar">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <RelativePanel MinWidth="350" Height="50" >
@@ -22,7 +25,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <AppBarButton x:Name="Eliminar" Icon="Delete" Label="eliminar" Command="{Binding }"/>
 
     </RelativePanel>
 </Frame>

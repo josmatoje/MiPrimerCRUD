@@ -25,7 +25,7 @@ namespace CRUD_Personas_Entities
             Direccion = direccion;
             Telefono = telefono;
             Foto = foto;
-            this.idDepartamento = idDepartamento;
+            IdDepartamento = idDepartamento;
         }
         #endregion
     }

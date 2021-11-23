@@ -178,7 +178,9 @@
       <Version>6.2.12</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Model\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BussinesLogic\CRUD_Personas_BL.csproj">
       <Project>{647235e0-0ba9-4945-9776-a42b68e4cf6b}</Project>
