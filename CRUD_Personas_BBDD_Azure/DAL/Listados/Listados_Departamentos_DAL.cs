@@ -18,7 +18,7 @@ namespace CRUD_Personas_DAL.Listados
         /// Postcondiciones: todos los datos de la lista existen en la base de datos
         /// </summary>
         /// <returns> El listado de todos los departamentos que existen en la base de datos</returns>
-        public static List<clsDepartamento> Listado_Departamentos_DAL()
+        public static List<clsDepartamento> Listado_Completo_Departamentos_DAL()
         {
             List<clsDepartamento> departamentos = new List<clsDepartamento>();
             SqlCommand instruccion = new SqlCommand();
@@ -50,10 +50,11 @@ namespace CRUD_Personas_DAL.Listados
         }
         /// <summary>
         /// Cabecera: public static List<clsDepartamento> Listado_Departamentos_DAL()
-        /// Descripcion: Devuelve el conjunto de departamentos que se encuentran en la base de datos a la q se conecta
+        /// Descripcion: Devuelve el departamento que se encuentra en la base de datos a la q se conecta correspondiente con el id solicitado.
         /// Precondiciones: Las personas de la clase clsPersona siguen la estructura de la base de datos
         /// Postcondiciones: todos los datos de la lista existen en la base de datos
         /// </summary>
+        /// <param name="idDepartamento"></param>
         /// <returns> El listado de todos los departamentos que existen en la base de datos</returns>
         public static clsDepartamento DepartamentoSeleccionado_DAL(int idDepartamento)
         {

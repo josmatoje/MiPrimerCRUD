@@ -1,33 +1,29 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
 {
-    public class ControllerCreado : Controller
+    public class PersonasController : Controller
     {
-        // GET: HomeController1
+        // GET: CRUDController
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: HomeController1/Details/5
+        // GET: CRUDController/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: HomeController1/Create
+        // GET: CRUDController/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: HomeController1/Create
+        // POST: CRUDController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -42,13 +38,13 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             }
         }
 
-        // GET: HomeController1/Edit/5
+        // GET: CRUDController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: HomeController1/Edit/5
+        // POST: CRUDController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -63,13 +59,13 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             }
         }
 
-        // GET: HomeController1/Delete/5
+        // GET: CRUDController/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: HomeController1/Delete/5
+        // POST: CRUDController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)

@@ -23,3 +23,4 @@ D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRU
 D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRUD_Personas_DAL.csproj.CoreCompileInputs.cache
 D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRUD_Personas_DAL.dll
 D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRUD_Personas_DAL.pdb
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRUD_Personas_DAL.csproj.CopyComplete

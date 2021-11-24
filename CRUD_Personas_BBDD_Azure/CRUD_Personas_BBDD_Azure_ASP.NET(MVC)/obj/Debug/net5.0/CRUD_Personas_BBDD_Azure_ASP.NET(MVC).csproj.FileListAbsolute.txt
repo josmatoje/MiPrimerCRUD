@@ -188,4 +188,7 @@ D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET
 D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\CRUD_Personas_BBDD_Azure_ASP.NET(MVC).pdb
 D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\CRUD_Personas_BBDD_Azure_ASP.NET(MVC).genruntimeconfig.cache
 D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\Razor\Views\Home\Edit.cshtml.g.cs
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\Razor\Views\Personas\Create.cshtml.g.cs
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\Razor\Views\Personas\Delete.cshtml.g.cs
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\Razor\Views\Personas\Details.cshtml.g.cs
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\Razor\Views\Personas\Edit.cshtml.g.cs

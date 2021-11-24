@@ -17,39 +17,32 @@ namespace CRUD_Personas_DAL.Listados
         /// Postcondiciones: todos los datos de la lista existen en la base de datos
         /// </summary>
         /// <returns> El listado de todas las personas que existen en la base de datos</returns>
-        public static List<clsPersona> Listado_Personas_DAL()
+        public static List<clsPersona> Listado_Completo_Personas_DAL()
         {
             List<clsPersona> personas = new List<clsPersona>();
             SqlCommand instruccion = new SqlCommand();
             SqlDataReader lector;
             clsPersona oPersona = new clsPersona();
 
-            try
+            conexionDAL.abrirConexion();
+            instruccion.CommandText = "SELECT IDPersona, nombrePersona, apellidosPersona, fechaNacimiento, telefono, direccion, IDDepartamento, Foto FROM Personas";
+            instruccion.Connection = conexionDAL.SqlConexion;
+            lector = instruccion.ExecuteReader();
+            if (lector.HasRows)
             {
-                conexionDAL.abrirConexion();
-                instruccion.CommandText = "SELECT IDPersona, nombrePersona, apellidosPersona, fechaNacimiento, telefono, direccion, IDDepartamento, Foto FROM Personas";
-                instruccion.Connection = conexionDAL.SqlConexion;
-                lector = instruccion.ExecuteReader();
-                if (lector.HasRows)
-                {
-                    while (lector.Read()){
-                        oPersona = generaPersonaLeida(lector);
-                        personas.Add(oPersona);
-                    }
+                while (lector.Read()){
+                    oPersona = generaPersonaLeida(lector);
+                    personas.Add(oPersona);
                 }
-                lector.Close();
-                conexionDAL.cerrarConexion();
             }
-            catch (SqlException e)
-            {
-                throw;
-            }
+            lector.Close();
+            conexionDAL.cerrarConexion();
 
             return personas;
         }
         /// <summary>
         /// Cabecera: public static clsPersona Personas_DAL(int idPersona)
-        /// Descripcion: Devuelve la persona que se encuentran en la base de datos a la q se conecta correspondiente con el id solicitado.
+        /// Descripcion: Devuelve la persona que se encuentra en la base de datos a la q se conecta correspondiente con el id solicitado.
         /// Precondiciones: idPersona mayor que cero
         /// Postcondiciones: asociado al id se devuelve una persona
         /// </summary>
@@ -60,26 +53,20 @@ namespace CRUD_Personas_DAL.Listados
             SqlCommand instruccion = new SqlCommand();
             SqlDataReader lector;
 
-            try
+            conexionDAL.abrirConexion();
+            instruccion.CommandText = @"SELECT IDPersona, nombrePersona, apellidosPersona, fechaNacimiento, telefono, direccion, IDDepartamento, Foto FROM Personas 
+                                        WHERE IDPersona= @idPersona";
+            instruccion.Parameters.AddWithValue("@idPersona", idPersona);
+            instruccion.Connection = conexionDAL.SqlConexion;
+            lector = instruccion.ExecuteReader();
+            if (lector.HasRows)
             {
-                conexionDAL.abrirConexion();
-                instruccion.CommandText = @"SELECT IDPersona, nombrePersona, apellidosPersona, fechaNacimiento, telefono, direccion, IDDepartamento, Foto FROM Personas 
-                                            WHERE IDPersona= @idPersona";
-                instruccion.Parameters.AddWithValue("@idPersona", idPersona);
-                instruccion.Connection = conexionDAL.SqlConexion;
-                lector = instruccion.ExecuteReader();
-                if (lector.HasRows)
-                {
-                    lector.Read();
-                    oPersona = generaPersonaLeida(lector);
-                }
-                lector.Close();
-                conexionDAL.cerrarConexion();
+                lector.Read();
+                oPersona = generaPersonaLeida(lector);
             }
-            catch (SqlException e)
-            {
-                throw;
-            }
+            lector.Close();
+            conexionDAL.cerrarConexion();
+            
             return oPersona;
         }
         /// <summary>
