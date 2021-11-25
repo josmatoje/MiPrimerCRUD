@@ -30,7 +30,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models
             Telefono = oPersona.Telefono;
             try
             {
-                Departamento = Listados_Departamentos_BL.DepartamentoSeleccionado_BL(oPersona.IdDepartamento).Nombre;
+                Departamento = (Listados_Departamentos_BL.DepartamentoSeleccionado_BL(oPersona.IdDepartamento)).Nombre;
             }catch(SqlException e)
             {
 

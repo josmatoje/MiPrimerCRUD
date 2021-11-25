@@ -1,4 +1,5 @@
 ﻿using CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models;
+using CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -21,7 +22,8 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            IndexVM indicie = new IndexVM();
+            return View(indicie);
         }
 
         public IActionResult Privacy()

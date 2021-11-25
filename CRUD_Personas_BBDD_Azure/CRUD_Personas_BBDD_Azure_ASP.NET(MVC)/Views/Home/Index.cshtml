@@ -1,4 +1,4 @@
-﻿@model IEnumerable<CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models.clsPersonaIndex>
+﻿@model CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models.ViewModels.IndexVM
 
 @{
     ViewData["Title"] = "Index";
@@ -13,28 +13,27 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Nombre)
+                @Html.DisplayNameFor(model => model.ListaPrincipal[0].Nombre)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Apellidos)
+                @Html.DisplayNameFor(model => model.ListaPrincipal[0].Apellidos)
+            </th>
+           <th>
+                @Html.DisplayNameFor(model => model.ListaPrincipal[0].FechaNacimiento)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.FechaNacimiento)
+                @Html.DisplayNameFor(model => model.ListaPrincipal[0].Direccion)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Direccion)
+                @Html.DisplayNameFor(model => model.ListaPrincipal[0].Telefono)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Telefono)
+                @Html.DisplayNameFor(model => model.ListaPrincipal[0].Departamento)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Departamento)
-            </th>
-            <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.ListaPrincipal) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Nombre)

@@ -65,14 +65,14 @@ namespace CRUD_Personas_DAL.Listados
             try
             {
                 conexionDAL.abrirConexion();
-                instruccion.CommandText = @"SELECT IdDepartamento, nombreDepartamento FROM Departamentos WHERE IDDEpartamento= @idDepartamento";
+                instruccion.CommandText = @"SELECT IdDepartamento, nombreDepartamento FROM Departamentos WHERE IdDepartamento= @idDepartamento";
                 instruccion.Parameters.AddWithValue("@idDepartamento", idDepartamento);
                 instruccion.Connection = conexionDAL.SqlConexion;
                 lector = instruccion.ExecuteReader();
                 if (lector.HasRows)
                 {
                     lector.Read();
-                    oDepartamento = new clsDepartamento((int)lector["IDPersona"], (string)lector["nombrePersona"]);
+                    oDepartamento = new clsDepartamento((int)lector["IdDEpartamento"], (string)lector["nombreDepartamento"]);
                 }
                 lector.Close();
                 conexionDAL.cerrarConexion();

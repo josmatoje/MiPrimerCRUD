@@ -1,4 +1,5 @@
 ﻿using CRUD_Personas_BL;
+using CRUD_Personas_BL.Listados;
 using CRUD_Personas_Entities;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using U11_ejerciciosUWP_ej3.ViewModels.Utilidades;
+using CRUD_Personas_BBDD_Azure_UWP.ViewModels.Utilidades;
 
 namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
 {
@@ -14,6 +15,7 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
     {
         #region atributos
         private DelegateCommand buscador;
+        private DelegateCommand anhadidor;
         private DelegateCommand eliminador;
         private ObservableCollection<clsPersona> listaPersonaCompleto;
         private ObservableCollection<clsPersona> listaPersonaOfrecido;
@@ -24,13 +26,15 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
         public VistaPersonaVM()
         {
             buscador = new DelegateCommand(Buscar, SePuedeBuscar);
+            anhadidor = new DelegateCommand(Anhadir, SePuedeAnhadir);
             eliminador = new DelegateCommand(Eliminar, SePuedeEliminarar);
-            ListaPersonaCompleto = new ObservableCollection<clsPersona>(BusinessLogicLayer.Listado_Personas_BL());
+            ListaPersonaCompleto = new ObservableCollection<clsPersona>(Listados_Personas_BL.Listado_Completo_Personas_BL());
             ListaPersonaOfrecido = ListaPersonaCompleto;
         }
         #endregion
         #region propiedades publicas
         public DelegateCommand Buscador { get => buscador; }
+        public DelegateCommand Anhadidor { get => anhadidor; set => anhadidor = value; }
         public DelegateCommand Eliminador { get => eliminador; }
         public ObservableCollection<clsPersona> ListaPersonaCompleto { get => listaPersonaCompleto; set => listaPersonaCompleto = value; }
         public ObservableCollection<clsPersona> ListaPersonaOfrecido { get => listaPersonaOfrecido; set => listaPersonaOfrecido = value; }
@@ -57,6 +61,7 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
                 eliminador.RaiseCanExecuteChanged();
             }
         }
+
         #endregion
         #region propiedades privadas
         private void Buscar()
@@ -70,6 +75,14 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
         private bool SePuedeBuscar()
         {   
             return !String.IsNullOrEmpty(textBoxBuscar);
+        }
+        private void Anhadir()
+        {
+            //Leva a pagina anhadir
+        }
+        private bool SePuedeAnhadir()
+        {
+            return true;
         }
         private void Eliminar()
         {

@@ -10,7 +10,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models.ViewModels
 {
     public class IndexVM
     {
-        ObservableCollection<clsPersonaIndex> listaPrincipal;
+        private ObservableCollection<clsPersonaIndex> listaPrincipal;
 
         public IndexVM()
         {
@@ -18,9 +18,10 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models.ViewModels
             listaPrincipal = new ObservableCollection<clsPersonaIndex>();
             foreach(clsPersona oPersona in listaPersonas)
             {
-                listaPrincipal.Add(new clsPersonaIndex(oPersona));
+                ListaPrincipal.Add(new clsPersonaIndex(oPersona));
             }
         }
 
+        public ObservableCollection<clsPersonaIndex> ListaPrincipal { get => listaPrincipal; set => listaPrincipal = value; }
     }
 }

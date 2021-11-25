@@ -26,7 +26,7 @@ namespace CRUD_Personas_BBDD_Azure_UWP
         public MainPage()
         {
             this.InitializeComponent();
-            contenedor.Navigate(typeof(Bienvenida));
+            //contenedor.Navigate(typeof(Bienvenida));
         }
 
         private void EleccionPrincipal_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)

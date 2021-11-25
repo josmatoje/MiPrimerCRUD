@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace U11_ejerciciosUWP_ej3.ViewModels.Utilidades
+namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels.Utilidades
 {
     public class DelegateCommand : ICommand
     {
