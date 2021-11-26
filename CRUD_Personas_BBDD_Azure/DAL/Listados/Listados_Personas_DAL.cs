@@ -83,13 +83,12 @@ namespace CRUD_Personas_DAL.Listados
             oPersona.Id = (int)lector["IDPersona"];
             oPersona.Nombre = (string)lector["nombrePersona"];
             oPersona.Apellidos = (string)lector["apellidosPersona"];
-            if (lector["Foto"] != System.DBNull.Value)
-                oPersona.FechaNacimiento = (DateTime)lector["fechaNacimiento"];
+            oPersona.FechaNacimiento = (lector["fechaNacimiento"] != System.DBNull.Value) ? (DateTime)lector["fechaNacimiento"] : DateTime.MinValue;
             oPersona.Telefono = (string)lector["telefono"];
             oPersona.Direccion = (string)lector["direccion"];
             oPersona.IdDepartamento = (int)lector["IDDepartamento"];
-            if (lector["Foto"] != System.DBNull.Value)
-                oPersona.Foto = (Byte[])lector["Foto"];
+            oPersona.Foto = lector["Foto"] != System.DBNull.Value ? (Byte[])lector["Foto"] : null;
+                 
             DateTime time = new DateTime();
             Console.WriteLine(time);
             return oPersona;

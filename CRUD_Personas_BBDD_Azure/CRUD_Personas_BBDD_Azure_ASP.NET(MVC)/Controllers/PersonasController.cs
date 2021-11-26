@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using CRUD_Personas_BL.Listados;
+using CRUD_Personas_Entities;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
@@ -14,7 +16,8 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
         // GET: CRUDController/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            clsPersona oPersona = Listados_Personas_BL.PersonaIndicada_BL(id);
+            return View(oPersona);
         }
 
         // GET: CRUDController/Create
@@ -41,7 +44,8 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
         // GET: CRUDController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            clsPersona oPersona = Listados_Personas_BL.PersonaIndicada_BL(id);
+            return View(oPersona);
         }
 
         // POST: CRUDController/Edit/5
@@ -55,14 +59,15 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             }
             catch
             {
-                return View();
+                return View("Home/Index");
             }
         }
 
         // GET: CRUDController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            clsPersona oPersona = Listados_Personas_BL.PersonaIndicada_BL(id);
+            return View(oPersona);
         }
 
         // POST: CRUDController/Delete/5

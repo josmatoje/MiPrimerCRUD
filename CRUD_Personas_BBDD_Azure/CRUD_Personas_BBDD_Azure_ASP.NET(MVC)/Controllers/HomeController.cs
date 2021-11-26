@@ -25,7 +25,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             IndexVM indicie = new IndexVM();
             return View(indicie);
         }
-
+         
         public IActionResult Privacy()
         {
             return View();
