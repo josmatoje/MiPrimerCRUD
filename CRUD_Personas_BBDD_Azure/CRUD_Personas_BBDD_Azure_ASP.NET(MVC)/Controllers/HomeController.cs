@@ -22,8 +22,15 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
 
         public ActionResult Index()
         {
-            IndexVM indicie = new IndexVM();
-            return View(indicie);
+            try
+            {
+                IndexVM indicie = new IndexVM();
+                return View(indicie);
+            }catch
+            {
+                ErrorViewModel evm = new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier };
+                return View("Error", evm);
+            }
         }
          
         public IActionResult Privacy()

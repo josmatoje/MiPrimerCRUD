@@ -7,7 +7,7 @@
 <h1>Indice</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    @Html.ActionLink("Crear", "Create", "Personas")
 </p>
 <table class="table">
     <thead>
@@ -54,9 +54,9 @@
                 @Html.DisplayFor(modelItem => item.Departamento)
             </td>
             <td>
-                @Html.ActionLink("Editar", "Personas/Edit", new { id=item.Id }) |
-                @Html.ActionLink("Detalles", "Personas/Details", new { id=item.Id }) |
-                @Html.ActionLink("Borrar", "Personas/Delete", new { id=item.Id })
+                @Html.ActionLink("Editar", "Edit", "Personas", new { id=item.Id }) |
+                @Html.ActionLink("Detalles", "Details", "Personas", new { id=item.Id }) |
+                @Html.ActionLink("Borrar", "Delete", "Personas", new { id=item.Id })
             </td>
         </tr>
 

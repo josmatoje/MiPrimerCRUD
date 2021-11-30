@@ -27,6 +27,17 @@ namespace CRUD_Personas_Entities
             Foto = foto;
             IdDepartamento = idDepartamento;
         }
+        public clsPersona(clsPersona oPersona)
+        {
+            Id = oPersona.Id;
+            Nombre = oPersona.Nombre;
+            Apellidos = oPersona.Apellidos;
+            FechaNacimiento = oPersona.FechaNacimiento;
+            Direccion = oPersona.Direccion;
+            Telefono = oPersona.Telefono;
+            Foto = oPersona.Foto;
+            IdDepartamento = oPersona.IdDepartamento;
+        }
         #endregion
     }
 }
