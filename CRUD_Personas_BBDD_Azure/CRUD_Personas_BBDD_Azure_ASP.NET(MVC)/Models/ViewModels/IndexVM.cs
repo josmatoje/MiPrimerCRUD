@@ -14,12 +14,10 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models.ViewModels
 
         public IndexVM()
         {
-            List<clsPersona> listaPersonas = Listados_Personas_BL.Listado_Completo_Personas_BL();
+            List<clsPersona> listaPersonas = new List<clsPersona> (Listados_Personas_BL.Listado_Completo_Personas_BL());
+            List<clsDepartamento> listaDepartamentos =new List<clsDepartamento> (Listados_Departamentos_BL.Listado_Completo_Departamentos_BL());
             listaPrincipal = new ObservableCollection<clsPersonaIndex>();
-            foreach(clsPersona oPersona in listaPersonas)
-            {
-                ListaPrincipal.Add(new clsPersonaIndex(oPersona));
-            }
+            listaPersonas.ForEach(x => ListaPrincipal.Add(new clsPersonaIndex(x, listaDepartamentos.Find(y=>y.ID==x.IdDepartamento).Nombre)));
         }
 
         public ObservableCollection<clsPersonaIndex> ListaPrincipal { get => listaPrincipal; set => listaPrincipal = value; }

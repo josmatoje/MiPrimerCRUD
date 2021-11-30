@@ -78,6 +78,7 @@ namespace CRUD_Personas_DAL.Manejadora
                                                                         Foto=@Foto
                                                     WHERE(IdPersona=@IdPersona)",
                                                     conexionDAL.SqlConexion);
+            instruccion.Parameters.AddWithValue("@IdPersona", personaEditada.Id);
             instruccion.Parameters.AddWithValue("@nombrePersona", personaEditada.Nombre);
             instruccion.Parameters.AddWithValue("@apellidosPersona", personaEditada.Apellidos);
             instruccion.Parameters.AddWithValue("@fechaNacimiento", personaEditada.FechaNacimiento);

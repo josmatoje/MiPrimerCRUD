@@ -20,7 +20,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models
         public string Departamento { get; set; }
         #endregion
         #region constructor
-        public clsPersonaIndex(clsPersona oPersona)
+        public clsPersonaIndex(clsPersona oPersona, string nombreDepartamento)
         {
             Id = oPersona.Id;
             Nombre = oPersona.Nombre;
@@ -28,13 +28,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models
             FechaNacimiento = oPersona.FechaNacimiento;
             Direccion = oPersona.Direccion;
             Telefono = oPersona.Telefono;
-            try
-            {
-                Departamento = (Listados_Departamentos_BL.DepartamentoSeleccionado_BL(oPersona.IdDepartamento)).Nombre;
-            }catch(SqlException e)
-            {
-
-            }
+            Departamento = nombreDepartamento;
         }
         #endregion
 

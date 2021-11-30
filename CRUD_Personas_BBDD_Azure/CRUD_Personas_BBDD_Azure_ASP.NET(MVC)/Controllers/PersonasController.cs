@@ -1,6 +1,7 @@
 ﻿using CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models;
 using CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models.ViewModels;
 using CRUD_Personas_BL.Listados;
+using CRUD_Personas_DAL.Manejadora;
 using CRUD_Personas_Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,44 +21,54 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
         // GET: CRUDController/Details/5
         public ActionResult Details(int id)
         {
+            ActionResult action = null;
             try {
                 clsPersona oPersona = Listados_Personas_BL.PersonaIndicada_BL(id);
-                return View(oPersona);
+                PersonaNombreDepartamentoVM oPersonaNombreDepartamento = new PersonaNombreDepartamentoVM(oPersona, Listados_Departamentos_BL.DepartamentoSeleccionado_BL(oPersona.IdDepartamento).Nombre);
+                action= View(oPersonaNombreDepartamento);
             }
             catch
             {
                 ErrorViewModel evm = new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier };
-                return View("Error", evm);
+                action = View("Error", evm);
             }
+            return action;
         }
 
         // GET: CRUDController/Create
         public ActionResult Create()
         {
+            ActionResult action = null;
             try {
-
-                return View();
+                PersonaListaDepartamentoVM oPersonaListaDepartamento = new PersonaListaDepartamentoVM(new clsPersona(), Listados_Departamentos_BL.Listado_Completo_Departamentos_BL());
+                action = View(oPersonaListaDepartamento);
             }
             catch
             {
                 ErrorViewModel evm = new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier };
-                return View("Error", evm);
+                action = View("Error", evm);
             }
+            return action;
         }
 
         // POST: CRUDController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(clsPersona oPersona)
         {
+            ActionResult action = null;
             try
             {
-                return RedirectToAction(nameof(Index));
+                Manejadores_Personas_DAL.Editar_Persona_DAL(oPersona);
+                PersonaListaDepartamentoVM oPersonaListaDepartamento = new PersonaListaDepartamentoVM(oPersona, Listados_Departamentos_BL.Listado_Completo_Departamentos_BL());
+                action = RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                ErrorViewModel evm = new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier };
+                action = View("Error", evm);
             }
+            return action;
         }
 
         // GET: CRUDController/Edit/5
@@ -66,9 +77,8 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             ActionResult action=null;
             try {
                 clsPersona oPersona = Listados_Personas_BL.PersonaIndicada_BL(id);
-                PersonaNombreDepartamentoVM oPersonaDepartamento = new PersonaNombreDepartamentoVM(oPersona, 
-                                                                                                Listados_Departamentos_BL.DepartamentoSeleccionado_BL(oPersona.IdDepartamento).Nombre);
-                action= View(oPersonaDepartamento);
+                PersonaListaDepartamentoVM oPersonaListaDepartamento = new PersonaListaDepartamentoVM(oPersona, Listados_Departamentos_BL.Listado_Completo_Departamentos_BL());
+                action = View(oPersonaListaDepartamento);
             }catch
             {
                 ErrorViewModel evm = new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier };
@@ -80,13 +90,13 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
         // POST: CRUDController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(clsPersona oPersona)
         {
             try
             {
-                clsPersona oPersona = new clsPersona((collection["Id"], collection["Id"], collection["Nombre"], collection["Apellidos"], collection["FechaNacimiento"], collection["Direccion"], collection["Telefono"], collection["Foto"]);
-                
-                return RedirectToAction(nameof(Index));
+                Manejadores_Personas_DAL.Editar_Persona_DAL(oPersona);
+                PersonaListaDepartamentoVM oPersonaListaDepartamento = new PersonaListaDepartamentoVM (oPersona, Listados_Departamentos_BL.Listado_Completo_Departamentos_BL());
+                return RedirectToAction();
             }
             catch
             {
@@ -99,7 +109,8 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
         {
             try {
                 clsPersona oPersona = Listados_Personas_BL.PersonaIndicada_BL(id);
-                return View(oPersona);
+                PersonaNombreDepartamentoVM oPersonaDepartamento = new PersonaNombreDepartamentoVM(oPersona, Listados_Departamentos_BL.DepartamentoSeleccionado_BL(oPersona.IdDepartamento).Nombre);
+                return View(oPersonaDepartamento);
             }catch
             {
                 ErrorViewModel evm = new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier };
