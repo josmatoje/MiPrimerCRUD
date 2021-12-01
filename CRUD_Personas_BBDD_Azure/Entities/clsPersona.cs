@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace CRUD_Personas_Entities
 {
@@ -6,19 +7,25 @@ namespace CRUD_Personas_Entities
     {
         #region propiedades publicas
         public int Id { get; set; }
+        [Required(ErrorMessage="Campo obligatoria")]
+        [Display(Name = "Nombre: ")]
         public string Nombre { get; set; }
+        [Required(ErrorMessage = "Campo obligatoria")]
+        [Display(Name = "Apellido: ")]
         public string Apellidos { get; set; }
+        [Display(Name ="Fecha de nacimiento: ")]
         public DateTime FechaNacimiento { get; set; }
+        [Display(Name = "Direccion: ")]
         public string Direccion { get; set; }
+        [Display(Name = "Nombre: ")]
         public string Telefono { get; set; }
+        [Display(Name = "Foto: ")]
         public Byte[] Foto { get; set; }
+        [Required(ErrorMessage = "Campo obligatoria")]
         public int IdDepartamento { get; set; }
         #endregion
         #region cosntructores
-        public clsPersona()
-        {
-            FechaNacimiento = DateTime.Now;
-        }
+        public clsPersona() { }
         public clsPersona(int id, string nombre, string apellidos, DateTime fechaNacimiento, string direccion, string telefono, Byte[] foto, int idDepartamento)
         {
             Id = id;

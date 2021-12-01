@@ -120,8 +120,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             try
             {
                 Manejadores_Personas_BL.Editar_Persona_BL(oPersona);
-                PersonaListaDepartamentoVM oPersonaListaDepartamento = new PersonaListaDepartamentoVM(oPersona, Listados_Departamentos_BL.Listado_Completo_Departamentos_BL());
-                return RedirectToAction();
+                action =  RedirectToAction("Index");
             }
             catch
             {
@@ -139,7 +138,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             {
                 clsPersona oPersona = Listados_Personas_BL.PersonaIndicada_BL(id);
                 PersonaNombreDepartamentoVM oPersonaDepartamento = new PersonaNombreDepartamentoVM(oPersona, Listados_Departamentos_BL.DepartamentoSeleccionado_BL(oPersona.IdDepartamento).Nombre);
-                return View(oPersonaDepartamento);
+                action = View(oPersonaDepartamento);
             }
             catch
             {
@@ -157,7 +156,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             ActionResult action = null;
             try
             {
-                return RedirectToAction(nameof(Index));
+                action =  RedirectToAction(nameof(Index));
             }
             catch
             {

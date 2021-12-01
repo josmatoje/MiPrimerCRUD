@@ -28,10 +28,10 @@ namespace CRUD_Personas_DAL.Manejadora
                                             conexionDAL.SqlConexion);
             instruccion.Parameters.AddWithValue("@nombrePersona", persona.Nombre);
             instruccion.Parameters.AddWithValue("@apellidosPersona", persona.Apellidos);
-            instruccion.Parameters.AddWithValue("@fechaNacimiento", persona.FechaNacimiento);
-            instruccion.Parameters.AddWithValue("@telefono", persona.Telefono);
-            instruccion.Parameters.AddWithValue("@direccion", persona.Direccion);
-            instruccion.Parameters.AddWithValue("@IDDepartamento", persona.IdDepartamento);
+            instruccion.Parameters.AddWithValue("@fechaNacimiento", (persona.FechaNacimiento == null) ? System.Data.SqlTypes.SqlDateTime.Null : persona.FechaNacimiento);
+            instruccion.Parameters.AddWithValue("@telefono", (persona.Telefono == null) ? System.Data.SqlTypes.SqlString.Null : persona.Telefono);
+            instruccion.Parameters.AddWithValue("@direccion", (persona.Direccion == null) ? System.Data.SqlTypes.SqlString.Null : persona.Direccion);
+            instruccion.Parameters.AddWithValue("@IDDepartamento", (persona.IdDepartamento == null) ? System.Data.SqlTypes.SqlInt32.Null : persona.IdDepartamento);
             instruccion.Parameters.AddWithValue("@Foto", (persona.Foto==null)? System.Data.SqlTypes.SqlBinary.Null:persona.Foto);
             numFilasAfectadas = instruccion.ExecuteNonQuery();
             conexionDAL.cerrarConexion();

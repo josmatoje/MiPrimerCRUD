@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models
 {
-    #region propiedades publicas
     public class clsPersonaIndex
     {
+        #region propiedades publicas
         public int Id { get; set; }
         public string Nombre { get; set; }
         public string Apellidos { get; set; }

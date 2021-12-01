@@ -17,3 +17,7 @@ D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Debug\netstandard2.
 D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Debug\netstandard2.0\CRUD_Personas_Entities.csproj.CoreCompileInputs.cache
 D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Debug\netstandard2.0\CRUD_Personas_Entities.dll
 D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Debug\netstandard2.0\CRUD_Personas_Entities.pdb
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Debug\netstandard2.0\CRUD_Personas_Entities.csproj.AssemblyReference.cache
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Debug\netstandard2.0\CRUD_Personas_Entities.csproj.CopyComplete
