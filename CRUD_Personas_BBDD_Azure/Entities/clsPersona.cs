@@ -15,7 +15,10 @@ namespace CRUD_Personas_Entities
         public int IdDepartamento { get; set; }
         #endregion
         #region cosntructores
-        public clsPersona(){ }//Constructor vacio para rellenar con valores
+        public clsPersona()
+        {
+            FechaNacimiento = DateTime.Now;
+        }
         public clsPersona(int id, string nombre, string apellidos, DateTime fechaNacimiento, string direccion, string telefono, Byte[] foto, int idDepartamento)
         {
             Id = id;

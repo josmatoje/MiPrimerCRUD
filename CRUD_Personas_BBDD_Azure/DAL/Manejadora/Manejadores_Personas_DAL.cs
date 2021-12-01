@@ -32,7 +32,7 @@ namespace CRUD_Personas_DAL.Manejadora
             instruccion.Parameters.AddWithValue("@telefono", persona.Telefono);
             instruccion.Parameters.AddWithValue("@direccion", persona.Direccion);
             instruccion.Parameters.AddWithValue("@IDDepartamento", persona.IdDepartamento);
-            instruccion.Parameters.AddWithValue("@Foto", persona.Foto);
+            instruccion.Parameters.AddWithValue("@Foto", (persona.Foto==null)? System.Data.SqlTypes.SqlBinary.Null:persona.Foto);
             numFilasAfectadas = instruccion.ExecuteNonQuery();
             conexionDAL.cerrarConexion();
             return numFilasAfectadas;

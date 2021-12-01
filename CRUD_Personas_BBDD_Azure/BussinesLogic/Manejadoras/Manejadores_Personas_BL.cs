@@ -16,7 +16,7 @@ namespace CRUD_Personas_BL.Manejadoras
         /// </summary>
         /// <param name="persona">los datos de la persona que queremoos añadir</param>
         /// <returns>Un entero que indica el número de filas afectadas en la inserción</returns>
-        public static int Insertar_Persona_DAL(clsPersona persona)
+        public static int Insertar_Persona_BL(clsPersona persona)
         {
             return Manejadores_Personas_DAL.Insertar_Persona_DAL(persona);
         }
@@ -28,7 +28,7 @@ namespace CRUD_Personas_BL.Manejadoras
         /// </summary>
         /// <param name="idPpersona">el id de la persona que queremoos eliminar</param>
         /// <returns>Un entero que indica el número de filas afectadas en la eliminación</returns>
-        public static int Borrar_Persona_DAL(int idPpersona)
+        public static int Borrar_Persona_BL(int idPpersona)
         {
             return Manejadores_Personas_DAL.Borrar_Persona_DAL(idPpersona);
         }
@@ -40,7 +40,7 @@ namespace CRUD_Personas_BL.Manejadoras
         /// </summary>
         /// <param name="personaEditada">los datos de la persona que queremoos modificar</param>
         /// <returns>Un entero que indica el número de filas afectadas en la edición</returns>
-        public static int Editar_Persona_DAL(clsPersona personaEditada)
+        public static int Editar_Persona_BL(clsPersona personaEditada)
         {
             return Manejadores_Personas_DAL.Editar_Persona_DAL(personaEditada);
         }

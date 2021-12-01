@@ -27,7 +27,8 @@
             @Html.DisplayNameFor(model => model.FechaNacimiento)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FechaNacimiento.ToShortDateString())
+            @*@Html.DisplayFor(model => model.FechaNacimiento.ToShortDateString())*@
+            <label>@Model.FechaNacimiento.ToShortDateString()</label>
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Direccion)
@@ -60,6 +61,6 @@
     
     <form asp-action="Delete">
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        @Html.ActionLink("Volver", "Index", "Home") 
+        @Html.ActionLink("Volver", "Index", "Personas") 
     </form>
 </div>

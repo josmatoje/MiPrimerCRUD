@@ -34,7 +34,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                app.UseExceptionHandler("/Personas/Error");
             }
             app.UseStaticFiles();
 
@@ -46,7 +46,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Personas}/{action=Index}/{id?}");
             });
         }
     }
