@@ -11,7 +11,7 @@ namespace CRUD_Personas_Entities
         public string Nombre { get; set; }
         [MaxLength(30),Required(ErrorMessage = "Campo obligatoria"),Display(Name = "Apellido: ")]
         public string Apellidos { get; set; }
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}" /*,ApplyFormatInEditMode = true*/), Display(Name = "Fecha de nacimiento: "), Required(ErrorMessage = "Campo obligatoria")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}" /*,ApplyFormatInEditMode = true*/), Display(Name = "Fecha de nacimiento: ")]
         public DateTime FechaNacimiento { get; set; }
         [MaxLength(50),Display(Name = "Direccion: ")]
         public string Direccion { get; set; }
