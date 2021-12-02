@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -30,11 +31,10 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             {
                 IndexVM indice = new IndexVM();
                 action = View(indice);
-            }
+        }
             catch
             {
-                ErrorViewModel evm = new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier };
-                action = View("Error", evm);
+                action = View("Error");
             }
             return action;
         }
@@ -50,8 +50,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             }
             catch
             {
-                ErrorViewModel evm = new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier };
-                action = View("Error", evm);
+                action = View("Error");
             }
             return action;
         }
@@ -68,8 +67,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             }
             catch
             {
-                ErrorViewModel evm = new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier };
-                action = View("Error", evm);
+                action = View("Error");
             }
             return action;
         }
@@ -77,18 +75,37 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
         // POST: CRUDController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(clsPersona oPersona)
+        public ActionResult Create(PersonaListaDepartamentoVM oPersonaListaDepartamento, IFormFile foto)
         {
             ActionResult action = null;
             try
             {
-                Manejadores_Personas_BL.Insertar_Persona_BL(oPersona);
-                action = RedirectToAction("Index");
+                oPersonaListaDepartamento.ListaDepartamento=Listados_Departamentos_BL.Listado_Completo_Departamentos_BL();
+                clsPersona opersona = Listados_Personas_BL.PersonaIndicada_BL(oPersonaListaDepartamento.Id);
+                if(opersona.Foto is not null)
+                    oPersonaListaDepartamento.Foto = opersona.Foto;
+                else if (foto is not null)
+                {
+                    using (var ms = new MemoryStream())
+                    {
+                        foto.CopyTo(ms);
+                        var fileBytes = ms.ToArray();
+                        oPersonaListaDepartamento.Foto = fileBytes;
+                    }
+                }
+                if (ModelState.IsValid)
+                {
+                    Manejadores_Personas_BL.Insertar_Persona_BL(oPersonaListaDepartamento);
+                    action = RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    action = View(oPersonaListaDepartamento);
+                }
             }
             catch
             {
-                ErrorViewModel evm = new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier };
-                action = View("Error", evm);
+                action = View("Error");
             }
             return action;
         }
@@ -105,8 +122,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             }
             catch
             {
-                ErrorViewModel evm = new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier };
-                action = View("Error", evm);
+                action = View("Error");
             }
             return action;
         }
@@ -114,18 +130,40 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
         // POST: CRUDController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(clsPersona oPersona, IFormFile foto)
+        public ActionResult Edit(PersonaListaDepartamentoVM oPersonaListaDepartamento, IFormFile foto)
         {
             ActionResult action = null;
             try
             {
-                Manejadores_Personas_BL.Editar_Persona_BL(oPersona);
-                action =  RedirectToAction("Index");
+                oPersonaListaDepartamento.ListaDepartamento = Listados_Departamentos_BL.Listado_Completo_Departamentos_BL();
+                clsPersona opersona = Listados_Personas_BL.PersonaIndicada_BL(oPersonaListaDepartamento.Id);
+                if (opersona.Foto is not null)
+                {
+                    oPersonaListaDepartamento.Foto = opersona.Foto;
+                }
+                if (foto is not null)
+                {
+                    using (var ms = new MemoryStream())
+                    {
+                        foto.CopyTo(ms);
+                        var fileBytes = ms.ToArray();
+                        oPersonaListaDepartamento.Foto = fileBytes;
+                    }
+                }
+                if (ModelState.IsValid)
+                {
+                    Manejadores_Personas_BL.Editar_Persona_BL(oPersonaListaDepartamento);
+                    action =  RedirectToAction(nameof(Details),new { id = oPersonaListaDepartamento.Id });//¿Por que es necesario un new id?
+                }
+                else
+                {
+                    action = View(oPersonaListaDepartamento);
+                }
+                
             }
             catch
             {
-                ErrorViewModel evm = new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier };
-                action = View("Error", evm);
+                action = View("Error");
             }
             return action;
         }
@@ -142,8 +180,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             }
             catch
             {
-                ErrorViewModel evm = new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier };
-                action = View("Error", evm);
+                action = View("Error");
             }
             return action;
         }
@@ -156,12 +193,12 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             ActionResult action = null;
             try
             {
+                Manejadores_Personas_BL.Borrar_Persona_BL(id);
                 action =  RedirectToAction(nameof(Index));
             }
             catch
             {
-                ErrorViewModel evm = new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier };
-                action = View("Error", evm);
+                action = View("Error");
             }
             return action;
         }
@@ -171,10 +208,10 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+        //[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        //public IActionResult Error()
+        //{
+        //    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        //}
     }
 }

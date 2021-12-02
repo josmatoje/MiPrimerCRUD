@@ -7,21 +7,18 @@ namespace CRUD_Personas_Entities
     {
         #region propiedades publicas
         public int Id { get; set; }
-        [Required(ErrorMessage="Campo obligatoria")]
-        [Display(Name = "Nombre: ")]
+        [MaxLength(30), Required(ErrorMessage="Campo obligatoria"), Display(Name = "Nombre: ")]
         public string Nombre { get; set; }
-        [Required(ErrorMessage = "Campo obligatoria")]
-        [Display(Name = "Apellido: ")]
+        [MaxLength(30),Required(ErrorMessage = "Campo obligatoria"),Display(Name = "Apellido: ")]
         public string Apellidos { get; set; }
-        [Display(Name ="Fecha de nacimiento: ")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}" /*,ApplyFormatInEditMode = true*/), Display(Name = "Fecha de nacimiento: "), Required(ErrorMessage = "Campo obligatoria")]
         public DateTime FechaNacimiento { get; set; }
-        [Display(Name = "Direccion: ")]
+        [MaxLength(50),Display(Name = "Direccion: ")]
         public string Direccion { get; set; }
-        [Display(Name = "Nombre: ")]
+        [MaxLength(12), Display(Name = "Telefono: ")]
         public string Telefono { get; set; }
         [Display(Name = "Foto: ")]
         public Byte[] Foto { get; set; }
-        [Required(ErrorMessage = "Campo obligatoria")]
         public int IdDepartamento { get; set; }
         #endregion
         #region cosntructores

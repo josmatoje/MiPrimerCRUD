@@ -28,10 +28,10 @@ namespace CRUD_Personas_DAL.Manejadora
                                             conexionDAL.SqlConexion);
             instruccion.Parameters.AddWithValue("@nombrePersona", persona.Nombre);
             instruccion.Parameters.AddWithValue("@apellidosPersona", persona.Apellidos);
-            instruccion.Parameters.AddWithValue("@fechaNacimiento", (persona.FechaNacimiento == null) ? System.Data.SqlTypes.SqlDateTime.Null : persona.FechaNacimiento);
+            instruccion.Parameters.AddWithValue("@fechaNacimiento", (persona.FechaNacimiento == null || persona.FechaNacimiento==System.Data.SqlTypes.SqlDateTime.MinValue) ? System.Data.SqlTypes.SqlDateTime.Null : persona.FechaNacimiento);
             instruccion.Parameters.AddWithValue("@telefono", (persona.Telefono == null) ? System.Data.SqlTypes.SqlString.Null : persona.Telefono);
             instruccion.Parameters.AddWithValue("@direccion", (persona.Direccion == null) ? System.Data.SqlTypes.SqlString.Null : persona.Direccion);
-            instruccion.Parameters.AddWithValue("@IDDepartamento", (persona.IdDepartamento == null) ? System.Data.SqlTypes.SqlInt32.Null : persona.IdDepartamento);
+            instruccion.Parameters.AddWithValue("@IDDepartamento", persona.IdDepartamento);
             instruccion.Parameters.AddWithValue("@Foto", (persona.Foto==null)? System.Data.SqlTypes.SqlBinary.Null:persona.Foto);
             numFilasAfectadas = instruccion.ExecuteNonQuery();
             conexionDAL.cerrarConexion();
@@ -81,11 +81,11 @@ namespace CRUD_Personas_DAL.Manejadora
             instruccion.Parameters.AddWithValue("@IdPersona", personaEditada.Id);
             instruccion.Parameters.AddWithValue("@nombrePersona", personaEditada.Nombre);
             instruccion.Parameters.AddWithValue("@apellidosPersona", personaEditada.Apellidos);
-            instruccion.Parameters.AddWithValue("@fechaNacimiento", personaEditada.FechaNacimiento);
-            instruccion.Parameters.AddWithValue("@telefono", personaEditada.Telefono);
-            instruccion.Parameters.AddWithValue("@direccion", personaEditada.Direccion);
+            instruccion.Parameters.AddWithValue("@fechaNacimiento", (personaEditada.FechaNacimiento == null || personaEditada.FechaNacimiento == System.Data.SqlTypes.SqlDateTime.MinValue) ? System.Data.SqlTypes.SqlDateTime.Null : personaEditada.FechaNacimiento);
+            instruccion.Parameters.AddWithValue("@telefono", (personaEditada.Telefono == null) ? System.Data.SqlTypes.SqlString.Null : personaEditada.Telefono);
+            instruccion.Parameters.AddWithValue("@direccion", (personaEditada.Direccion == null) ? System.Data.SqlTypes.SqlString.Null : personaEditada.Direccion);
             instruccion.Parameters.AddWithValue("@IDDepartamento", personaEditada.IdDepartamento);
-            instruccion.Parameters.AddWithValue("@Foto", personaEditada.Foto);
+            instruccion.Parameters.AddWithValue("@Foto", (personaEditada.Foto == null) ? System.Data.SqlTypes.SqlBinary.Null : personaEditada.Foto);
             numFilasAfectadas = instruccion.ExecuteNonQuery();
             conexionDAL.cerrarConexion();
             return numFilasAfectadas;

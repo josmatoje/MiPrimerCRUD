@@ -23,8 +23,8 @@
                 <span asp-validation-for="Apellidos" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label>Fecha de Nacimiento</label>
-                <input asp-for="FechaNacimiento" class="form-control"  />
+                <label asp-for="FechaNacimiento" class="control-label"></label>
+                <input asp-for="FechaNacimiento" class="form-control" type="date" />
                 <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -47,8 +47,6 @@
                 <span asp-validation-for="Foto" class="text-danger"></span>
             </div>
             <div class="form-group">
-                @* TODO buscar como se hace el select con los helpers de Razor*@
-
                 <select name="IDDepartamento">
                     @foreach (CRUD_Personas_Entities.clsDepartamento dpto in Model.ListaDepartamento)
                     {

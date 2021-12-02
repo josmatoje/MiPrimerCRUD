@@ -17,7 +17,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models.ViewModels
             List<clsPersona> listaPersonas = new List<clsPersona> (Listados_Personas_BL.Listado_Completo_Personas_BL());
             List<clsDepartamento> listaDepartamentos =new List<clsDepartamento> (Listados_Departamentos_BL.Listado_Completo_Departamentos_BL());
             listaPrincipal = new ObservableCollection<clsPersonaIndex>();
-            listaPersonas.ForEach(x => ListaPrincipal.Add(new clsPersonaIndex(x, listaDepartamentos.Find(y=>y.ID==x.IdDepartamento).Nombre)));
+            listaPersonas.ForEach(x => ListaPrincipal.Add(new clsPersonaIndex(x, listaDepartamentos.First(y=>y.ID==x.IdDepartamento).Nombre)));
         }
 
         public ObservableCollection<clsPersonaIndex> ListaPrincipal { get => listaPrincipal; set => listaPrincipal = value; }

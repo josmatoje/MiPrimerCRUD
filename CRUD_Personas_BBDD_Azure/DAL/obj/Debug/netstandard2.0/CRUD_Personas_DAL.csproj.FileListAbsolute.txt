@@ -26,3 +26,5 @@ D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRU
 D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\obj\Debug\netstandard2.0\CRUD_Personas_DAL.csproj.CopyComplete
 D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
 D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\DAL\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml

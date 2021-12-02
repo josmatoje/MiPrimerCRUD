@@ -2,6 +2,7 @@
 using CRUD_Personas_Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,8 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models
         public int Id { get; set; }
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
+        [Display(Name = "Fecha de nacimiento")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime FechaNacimiento { get; set; }
         public string Direccion { get; set; }
         public string Telefono { get; set; }
