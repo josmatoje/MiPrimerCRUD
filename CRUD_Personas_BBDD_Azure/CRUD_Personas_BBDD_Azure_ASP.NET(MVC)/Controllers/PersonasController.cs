@@ -62,6 +62,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             try
             {
                 clsPersona oPersona = new clsPersona();
+                oPersona.FechaNacimiento=DateTime.Now; //Seteamos al día actual para comodida de la insercion de datos
                 PersonaListaDepartamentoVM oPersonaListaDepartamento = new PersonaListaDepartamentoVM(oPersona, Listados_Departamentos_BL.Listado_Completo_Departamentos_BL());
                 action = View(oPersonaListaDepartamento);
             }
@@ -82,9 +83,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             {
                 oPersonaListaDepartamento.ListaDepartamento=Listados_Departamentos_BL.Listado_Completo_Departamentos_BL();
                 clsPersona opersona = Listados_Personas_BL.PersonaIndicada_BL(oPersonaListaDepartamento.Id);
-                if(opersona.Foto is not null)
-                    oPersonaListaDepartamento.Foto = opersona.Foto;
-                else if (foto is not null)
+                if (foto is not null)
                 {
                     using (var ms = new MemoryStream())
                     {
@@ -135,12 +134,10 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
             ActionResult action = null;
             try
             {
-                oPersonaListaDepartamento.ListaDepartamento = Listados_Departamentos_BL.Listado_Completo_Departamentos_BL();
+                oPersonaListaDepartamento.ListaDepartamento = Listados_Departamentos_BL.Listado_Completo_Departamentos_BL();//Cargamos la lista de departamentos
                 clsPersona opersona = Listados_Personas_BL.PersonaIndicada_BL(oPersonaListaDepartamento.Id);
                 if (opersona.Foto is not null)
-                {
                     oPersonaListaDepartamento.Foto = opersona.Foto;
-                }
                 if (foto is not null)
                 {
                     using (var ms = new MemoryStream())
@@ -188,7 +185,8 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers
         // POST: CRUDController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        [ActionName("Delete")]
+        public ActionResult DeletePost(int id)
         {
             ActionResult action = null;
             try

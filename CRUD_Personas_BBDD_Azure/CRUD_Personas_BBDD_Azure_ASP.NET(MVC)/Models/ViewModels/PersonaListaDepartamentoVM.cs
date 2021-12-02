@@ -1,5 +1,6 @@
 ﻿using CRUD_Personas_Entities;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models.ViewModels
 {
@@ -15,7 +16,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models.ViewModels
         }
         public PersonaListaDepartamentoVM(clsPersona persona, List<clsDepartamento> listaDepartamentos) : base(persona)
         {
-            ListaDepartamento = listaDepartamentos;
+            ListaDepartamento = listaDepartamentos.Where(departamento=>departamento.ID!=1).ToList();
         }
         public PersonaListaDepartamentoVM(clsPersona persona) : base(persona)
         {

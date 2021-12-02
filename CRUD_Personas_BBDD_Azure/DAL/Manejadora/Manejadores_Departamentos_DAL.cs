@@ -43,8 +43,7 @@ namespace CRUD_Personas_DAL.Manejadora
         {
             conexionDAL.abrirConexion();
             int numFilasAfectadas;
-            SqlCommand instruccion = new SqlCommand( @"DELETE FROM Departamentos 
-                                                        WHERE IdDepartamento=@IdDepartamento",
+            SqlCommand instruccion = new SqlCommand(@"execute EliminarDepartamento @IdDepartamento", //Procedimiento almacenado
                                                         conexionDAL.SqlConexion);
             instruccion.Parameters.AddWithValue("@IdDepartamento", idDepartamento);
             numFilasAfectadas = instruccion.ExecuteNonQuery();
@@ -63,10 +62,11 @@ namespace CRUD_Personas_DAL.Manejadora
         {
             conexionDAL.abrirConexion();
             int numFilasAfectadas;
-            SqlCommand instruccion = new SqlCommand(@"UPDATE Departamentos SET nombreDepartamento=@nombreDepartamento)
+            SqlCommand instruccion = new SqlCommand(@"UPDATE Departamentos SET nombreDepartamento=@nombreDepartamento
                                                         WHERE (IDDepartamento=@IDDepartamento)",
                                                         conexionDAL.SqlConexion);
             instruccion.Parameters.AddWithValue("@nombreDepartamento", departamento.Nombre);
+            instruccion.Parameters.AddWithValue("@IDDepartamento", departamento.ID);
             numFilasAfectadas = instruccion.ExecuteNonQuery();
             conexionDAL.cerrarConexion();
             return numFilasAfectadas;

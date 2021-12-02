@@ -271,4 +271,9 @@ D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_
 D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\Razor\Views\Personas\Details.cshtml.g.cs
 D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\Razor\Views\Personas\Edit.cshtml.g.cs
 D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\Razor\Views\Personas\Index.cshtml.g.cs
-D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\Razor\Views\Personas\Privacy.cshtml.g.cs
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\Razor\Views\Departamento\Index.cshtml.g.cs
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\Razor\Views\Departamento\Details.cshtml.g.cs
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\Razor\Views\Departamento\Create.cshtml.g.cs
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\Razor\Views\Departamento\Edit.cshtml.g.cs
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\Razor\Views\Departamento\Delete.cshtml.g.cs
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_ASP.NET(MVC)\obj\Debug\net5.0\Razor\Views\Shared\Privacy.cshtml.g.cs

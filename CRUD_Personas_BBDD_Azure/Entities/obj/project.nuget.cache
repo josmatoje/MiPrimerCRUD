@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "cLqW1gH52wXRv0V54vN8QvofmaFTv3w0ty4WxJ+p79DZCRBUk6DJP+ZSbz4YhXhgglgqr8AvIDJbXH+LKOxsaA==",
+  "dgSpecHash": "xAT7gcKZh8vamIaIZOrKQsSK2xlLPY0YBx5j/85DE7rofrm+xab5yD4meZMumalMr3fp8Rx+vSaAyc3Y0eEr0Q==",
   "success": true,
-  "projectFilePath": "D:\\jmmata\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\Entities\\CRUD_Personas_Entities.csproj",
+  "projectFilePath": "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\Entities\\CRUD_Personas_Entities.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jmmata\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\jmmata\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\josem\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\josem\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

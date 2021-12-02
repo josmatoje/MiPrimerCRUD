@@ -10,7 +10,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Create">
+        <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Nombre" class="control-label"></label>
@@ -39,7 +39,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Foto" class="control-label"></label>
-                <input name="seleccionFoto" asp-for="Foto" type="file" accept=".jpg, .jpng, .png" />
+                <input asp-for="Foto" type="file" accept=".jpg, .jpng, .png" />
                 @if(Model.Foto is not null)
                 {
                     <img src="data:image/jpg;base64, @Convert.ToBase64String(Model.Foto)" height="100" width="200"/>
@@ -51,7 +51,8 @@
                 <select asp-for="IdDepartamento" class="form-control" >
                     @foreach (CRUD_Personas_Entities.clsDepartamento dpto in Model.ListaDepartamento)
                     {
-                        <option value = "@dpto.ID" selected ="@((Model.IdDepartamento==dpto.ID)? "selected" : false)" > @dpto.Nombre  </option>
+                        if(dpto.ID!=1)@*Id del departamento 'sin departamento'*@
+                            <option value = "@dpto.ID" selected ="@((Model.IdDepartamento==dpto.ID)? "selected" : false)" > @dpto.Nombre  </option>
                     }
                 </select>
                 <span asp-validation-for="IdDepartamento" class="text-danger"></span>
