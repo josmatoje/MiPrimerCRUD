@@ -1,0 +1,12 @@
+CAPA Entidades:
+	clsPlanta: clase que recoge las caracteristicas de una planta
+		atributos: String nombre, String detalles
+Capa DAL:
+	clsListadoPlantas: una clase que devuelve los listados de clsPlanta requeridas
+		public List<String> ListadoCompletoNombresPlanta()
+		public String GetGetallesPlanta(String nombre)
+Capa UI:
+	clsIndexViewModel: una clase que recibe un listado de String con los nombres 
+		de la lista de clsListadoPlantas y una 
+		planta (la seleccionada) para mostrarlas en la web.
+	atributos: Lista clsPlanta.nombre, clsPlanta
