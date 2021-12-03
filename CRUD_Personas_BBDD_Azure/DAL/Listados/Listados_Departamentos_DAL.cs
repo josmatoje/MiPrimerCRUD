@@ -9,8 +9,10 @@ namespace CRUD_Personas_DAL.Listados
 {
     public class Listados_Departamentos_DAL
     {
+        #region propiedad privada
         private static clsMyConexion conexionDAL = new clsMyConexion();
-
+        #endregion
+        #region propiedades publicas
         /// <summary>
         /// Cabecera: public static List<clsDepartamento> Listado_Departamentos_DAL()
         /// Descripcion: Devuelve el conjunto de departamentos que se encuentran en la base de datos a la q se conecta
@@ -84,5 +86,6 @@ namespace CRUD_Personas_DAL.Listados
 
             return oDepartamento;
         }
+        #endregion
     }
 }

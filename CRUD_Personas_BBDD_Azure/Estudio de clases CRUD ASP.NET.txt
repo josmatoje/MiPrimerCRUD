@@ -1,12 +1,63 @@
 CAPA Entidades:
-	clsPlanta: clase que recoge las caracteristicas de una planta
-		atributos: String nombre, String detalles
+	clsPersona: clase que recoge las caracteristicas de una persona
+		atributos: int ID, String Nombre, String Apellidos, DateTime FechaNacimiento, String Direccion, 
+				String Telefono, Byte[] Foto, int IdDepartamento
+	clsDepartamento: clase que recoge las caracteristicas de un departamento
+		atributos: int ID, String Nombre
+	*Todos los atributos tienen getters y setters publicos
 Capa DAL:
-	clsListadoPlantas: una clase que devuelve los listados de clsPlanta requeridas
-		public List<String> ListadoCompletoNombresPlanta()
-		public String GetGetallesPlanta(String nombre)
+	clsMyConexion: clase que establece una conexion con la base de datos especificada
+		atributos: SqlConnection sqlConexion, String miCadena
+		public bool abrirConexion()
+		public void cerrarConexion()
+	Listados_Departamentos_DAL: clase que lista los departamentos segun ciertos criterios
+		atributos: clsMyConexion conexionDAL
+		public static List<clsDepartamento> Listado_Completo_Departamentos_DAL()
+		public static clsDepartamento DepartamentoSeleccionado_DAL(int idDepartamento)
+	Listados_Personas_DAL: clase que lista las personas segun ciertos criterios
+		atributos: clsMyConexion conexionDAL
+		public static List<clsPersona> Listado_Completo_Personas_DAL()
+		public static clsPersona PersonaIndicada_DAL(int idPersona)
+		private static clsPersona generaPersonaLeida(SqlDataReader lector)
+	Manejadores_Departamentos_DAL: clase que modifica los departamentos segun ciertos criterios
+		atributos: clsMyConexion conexionDAL
+		public static int Insertar_Departamento_DAL(clsDepartamento departamento)
+		public static int Borrar_Departamento_DAL(int idDepartamento)
+		public static int Editar_Departamento_DAL(clsDepartamento departamento)
+	Manejadores_Personas_DAL: clase que modifica las personas segun ciertos criterios
+		atributos: clsMyConexion conexionDAL
+		public static int Insertar_Persona_DAL(clsPersona persona)
+		public static int Borrar_Persona_DAL(int idPpersona)
+		public static int Editar_Persona_DAL(clsPersona personaEditada)
+Capa BL:
+	Listados_Departamentos_BL: clase que lista los departamentos segun ciertos criterios
+		public static List<clsDepartamento> Listado_Completo_Departamentos_BL()
+		public static clsDepartamento DepartamentoSeleccionado_BL(int idDepartamento)
+	Listados_Personas_BL: clase que lista las personas segun ciertos criterios
+		public static List<clsPersona> Listado_Completo_Personas_BL()
+		public static clsPersona PersonaIndicada_BL(int idPersona)
+	Manejadores_Departamentos_BL: clase que modifica los departamentos segun ciertos criterios
+		public static int Insertar_Departamento_BL(clsDepartamento departamento)
+		public static int Borrar_Departamento_BL(int idDepartamento)
+		public static int Editar_Departamento_BL(clsDepartamento departamento)
+	Manejadores_Personas_BL: clase que modifica las personas segun ciertos criterios
+		public static int Insertar_Persona_BL(clsPersona persona)
+		public static int Borrar_Persona_BL(int idPpersona)
+		public static int Editar_Persona_BL(clsPersona personaEditada)
+	
 Capa UI:
-	clsIndexViewModel: una clase que recibe un listado de String con los nombres 
-		de la lista de clsListadoPlantas y una 
-		planta (la seleccionada) para mostrarlas en la web.
-	atributos: Lista clsPlanta.nombre, clsPlanta
+	Controlers: DepartamentoController, PersonasController
+	Vistas:
+		-Departamentos: Create, Delete, Details, Edit, Index
+		-Personas: Create, Delete, Details, Edit, Index
+	ViewModels:
+		IndexVM: 
+			atributos: ObservableCollection<clsPersonaIndex> listaPrincipal
+		PersonaListaDepartamentoVM: hereda de clsPersona
+			atributos: List<clsDepartamento> listaDepartamento
+		PersonaNombreDepartamentoVM: hereda de clsPersona
+			atributo: string nombreDepartamento
+	Models: 
+		clsPersonaIndex:una persona para ser mostrada en una lista
+			atributos: int ID, String Nombre, String Apellidos, DateTime FechaNacimiento, String Direccion, 
+				String Telefono, String Departamento

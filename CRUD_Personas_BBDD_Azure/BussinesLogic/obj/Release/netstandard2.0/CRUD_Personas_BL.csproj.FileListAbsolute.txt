@@ -1,0 +1,17 @@
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Release\netstandard2.0\CRUD_Personas_BL.deps.json
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Release\netstandard2.0\CRUD_Personas_BL.dll
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Release\netstandard2.0\CRUD_Personas_BL.pdb
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Release\netstandard2.0\CRUD_Personas_DAL.dll
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Release\netstandard2.0\CRUD_Personas_Entities.dll
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Release\netstandard2.0\System.ComponentModel.Annotations.dll
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Release\netstandard2.0\CRUD_Personas_DAL.pdb
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Release\netstandard2.0\CRUD_Personas_Entities.pdb
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Release\netstandard2.0\System.ComponentModel.Annotations.xml
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\obj\Release\netstandard2.0\CRUD_Personas_BL.csproj.AssemblyReference.cache
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\obj\Release\netstandard2.0\CRUD_Personas_BL.GeneratedMSBuildEditorConfig.editorconfig
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\obj\Release\netstandard2.0\CRUD_Personas_BL.AssemblyInfoInputs.cache
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\obj\Release\netstandard2.0\CRUD_Personas_BL.AssemblyInfo.cs
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\obj\Release\netstandard2.0\CRUD_Personas_BL.csproj.CoreCompileInputs.cache
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\obj\Release\netstandard2.0\CRUD_Personas_BL.csproj.CopyComplete
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\obj\Release\netstandard2.0\CRUD_Personas_BL.dll
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\obj\Release\netstandard2.0\CRUD_Personas_BL.pdb

@@ -1,0 +1,13 @@
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\bin\Release\netstandard2.0\CRUD_Personas_Entities.deps.json
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\bin\Release\netstandard2.0\CRUD_Personas_Entities.dll
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\bin\Release\netstandard2.0\CRUD_Personas_Entities.pdb
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\bin\Release\netstandard2.0\System.ComponentModel.Annotations.dll
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\bin\Release\netstandard2.0\System.ComponentModel.Annotations.xml
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Release\netstandard2.0\CRUD_Personas_Entities.csproj.AssemblyReference.cache
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Release\netstandard2.0\CRUD_Personas_Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Release\netstandard2.0\CRUD_Personas_Entities.AssemblyInfoInputs.cache
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Release\netstandard2.0\CRUD_Personas_Entities.AssemblyInfo.cs
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Release\netstandard2.0\CRUD_Personas_Entities.csproj.CoreCompileInputs.cache
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Release\netstandard2.0\CRUD_Personas_Entities.csproj.CopyComplete
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Release\netstandard2.0\CRUD_Personas_Entities.dll
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\obj\Release\netstandard2.0\CRUD_Personas_Entities.pdb
