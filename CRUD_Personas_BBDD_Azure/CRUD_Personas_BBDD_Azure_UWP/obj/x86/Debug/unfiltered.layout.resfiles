@@ -9,7 +9,10 @@ Assets\Wide310x150Logo.scale-200.png
 App.xbf
 CRUD_Personas_BBDD_Azure_UWP.xr.xml
 Views\Bienvenida.xbf
+Views\Error.xbf
 Views\MainPage.xbf
+Views\VistaAnhadirEditarDepartamento.xbf
+Views\VistaAnhadirEditarPersona.xbf
 Views\VistaDepartamentos.xbf
 Views\VistaPersona.xbf
 Properties\Default.rd.xml

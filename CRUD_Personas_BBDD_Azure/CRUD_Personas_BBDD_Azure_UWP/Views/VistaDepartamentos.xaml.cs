@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CRUD_Personas_BBDD_Azure_UWP.ViewModels;
+using CRUD_Personas_Entities;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,6 +27,15 @@ namespace CRUD_Personas_BBDD_Azure_UWP.Views
         public VistaDepartamentos()
         {
             this.InitializeComponent();
+        }
+
+        private void Anhadir_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(VistaAnhadirEditarDepartamento));
+        }
+        private void Editar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(VistaAnhadirEditarDepartamento), (this.DataContext as VistaDepartamentosVM).DepartamentoSeleccionado as clsDepartamento);
         }
     }
 }

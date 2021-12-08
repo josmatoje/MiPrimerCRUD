@@ -18,14 +18,19 @@ INSERT INTO [dbo].[Personas]([nombrePersona],[apellidosPersona],[fechaNacimiento
            ('Jesus','Santos','8/1/1987','el casa','telefono?',3),
            ('Antonio','Quevedo','14/3/2004','casa','telefono?',3)
 GO
-create or alter procedure EliminarDepartamento (@iddepartamento int) as
-begin
-	update personas set Iddepartamento=1 where Iddepartamento=@iddepartamento
-	delete from departamentos where Iddepartamento=@iddepartamento
-end
+CREATE OR ALTER PROCEDURE EliminarDepartamento (@iddepartamento int) AS
+BEGIN
+	UPDATE personas 
+		SET Iddepartamento=1 
+		WHERE Iddepartamento=@iddepartamento
+	DELETE FROM departamentos 
+		WHERE Iddepartamento=@iddepartamento
+END
 
 begin tran
 execute EliminarDepartamento 3
 select * from personas
 select * from departamentos
 rollback
+
+CREATE USER LOGIN 

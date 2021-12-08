@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CRUD_Personas_BBDD_Azure_UWP.ViewModels;
+using CRUD_Personas_Entities;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -24,7 +26,23 @@ namespace CRUD_Personas_BBDD_Azure_UWP.Views
     {
         public VistaPersona()
         {
-            this.InitializeComponent();
+            try
+            {
+                this.InitializeComponent();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        private void Anhadir_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(VistaAnhadirEditarPersona));
+        }
+        private void Editar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(VistaAnhadirEditarPersona), (this.DataContext as VistaPersonasVM).PersonaSeleccionada as clsPersona);
         }
     }
 }

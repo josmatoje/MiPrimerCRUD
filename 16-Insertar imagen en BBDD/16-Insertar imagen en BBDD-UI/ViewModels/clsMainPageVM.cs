@@ -23,8 +23,6 @@ namespace _16_Insertar_imagen_en_BBDD_UI.ViewModels
 
         #region "Propiedades"
 
-
-
         public clsMyConnection oConexion
         {
             get { return _oConexion; }
@@ -57,8 +55,6 @@ namespace _16_Insertar_imagen_en_BBDD_UI.ViewModels
 
         #endregion
 
-
-
         #region "Constructores"
         public clsMainPageVM()
         {
@@ -66,8 +62,6 @@ namespace _16_Insertar_imagen_en_BBDD_UI.ViewModels
             _oImagen = new clsImagen();
         }
         #endregion
-
-
 
         #region "Commands"
         /// <summary>

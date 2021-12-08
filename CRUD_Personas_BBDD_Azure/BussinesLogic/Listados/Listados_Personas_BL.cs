@@ -18,6 +18,17 @@ namespace CRUD_Personas_BL.Listados
             return Listados_Personas_DAL.Listado_Completo_Personas_DAL();
         }
         /// <summary>
+        /// Cabecera: public static List<clsPersona> Listado_Simple_Personas_DAL()
+        /// Descripcion: Devuelve el conjunto de personas reducido que se encuentran en la base de datos a la q se conecta
+        /// Precondiciones: Ninguna
+        /// Postcondiciones: todos los datos de la lista existen en la base de datos
+        /// </summary>
+        /// <returns> El listado de todas las personas que existen en la base de datos simplificado</returns>
+        public static List<clsPersona> Listado_Simple_Personas_BL()
+        {
+            return Listados_Personas_DAL.Listado_Simple_Personas_DAL();
+        }
+        /// <summary>
         /// Cabecera: public static clsPersona Personas_DAL(int idPersona)
         /// Descripcion: Devuelve la persona que se encuentran en la base de datos a la q se conecta correspondiente con el id solicitado.
         /// Precondiciones: idPersona mayor que cero

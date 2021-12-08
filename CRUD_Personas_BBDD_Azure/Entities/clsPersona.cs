@@ -3,14 +3,25 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CRUD_Personas_Entities
 {
-    public class clsPersona
+    public class clsPersona //: clsVMBase
     {
+        #region atributos
+        private string nombre;
+        private string apellidos;
+        #endregion
         #region propiedades publicas
         public int Id { get; set; }
         [MaxLength(30), Required(ErrorMessage="Campo obligatoria"), Display(Name = "Nombre: ")]
-        public string Nombre { get; set; }
+        public string Nombre 
+        { 
+            get => nombre;
+            set => nombre = value;
+        }
         [MaxLength(30),Required(ErrorMessage = "Campo obligatoria"),Display(Name = "Apellido: ")]
-        public string Apellidos { get; set; }
+        public string Apellidos {
+            get => apellidos;
+            set => apellidos = value;
+        }
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}" /*,ApplyFormatInEditMode = true*/),/* MaxLength(DateTime.Now.AddDays(-1)),*/ Display(Name = "Fecha de nacimiento: ")]
         public DateTime FechaNacimiento { get; set; }
         [MaxLength(50),Display(Name = "Direccion: ")]

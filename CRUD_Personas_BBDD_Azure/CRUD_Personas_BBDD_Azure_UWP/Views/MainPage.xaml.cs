@@ -26,19 +26,29 @@ namespace CRUD_Personas_BBDD_Azure_UWP
         public MainPage()
         {
             this.InitializeComponent();
-            //contenedor.Navigate(typeof(Bienvenida));
+            contenedor.Navigate(typeof(Bienvenida));
         }
 
         private void EleccionPrincipal_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
         {
             NavigationViewItem paginaSeleccionada = (NavigationViewItem)sender.SelectedItem;
-            switch (paginaSeleccionada.Tag)
+            try
             {
-                case "vistapersonas": contenedor.Navigate(typeof(VistaPersona));
-                    break;
-                case "vistaDepartamentos": contenedor.Navigate(typeof(VistaDepartamentos));
-                    break;
+                switch (paginaSeleccionada.Name)
+                {
+                    case "vistaPersonas":
+                        contenedor.Navigate(typeof(VistaPersona));
+                        break;
+                    case "vistaDepartamentos":
+                        contenedor.Navigate(typeof(VistaDepartamentos));
+                        break;
+                }
             }
+            catch
+            {
+                contenedor.Navigate(typeof(Error));
+            }
+            
         }
     }
 }

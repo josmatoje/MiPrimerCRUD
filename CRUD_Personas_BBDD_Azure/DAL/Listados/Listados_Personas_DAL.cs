@@ -24,19 +24,66 @@ namespace CRUD_Personas_DAL.Listados
             SqlDataReader lector;
             clsPersona oPersona = new clsPersona();
 
-            conexionDAL.abrirConexion();
-            instruccion.CommandText = "SELECT IDPersona, nombrePersona, apellidosPersona, fechaNacimiento, telefono, direccion, IDDepartamento, Foto FROM Personas";
-            instruccion.Connection = conexionDAL.SqlConexion;
-            lector = instruccion.ExecuteReader();
-            if (lector.HasRows)
+            try
             {
-                while (lector.Read()){
-                    oPersona = generaPersonaLeida(lector);
-                    personas.Add(oPersona);
+                conexionDAL.abrirConexion();
+                instruccion.CommandText = "SELECT IDPersona, nombrePersona, apellidosPersona, fechaNacimiento, telefono, direccion, IDDepartamento, Foto FROM Personas";
+                instruccion.Connection = conexionDAL.SqlConexion;
+                lector = instruccion.ExecuteReader();
+                if (lector.HasRows)
+                {
+                    while (lector.Read())
+                    {
+                        oPersona = generaPersonaLeida(lector);
+                        personas.Add(oPersona);
+                    }
                 }
+                lector.Close();
             }
-            lector.Close();
-            conexionDAL.cerrarConexion();
+            finally
+            {
+                conexionDAL.cerrarConexion();
+            }
+            
+
+            return personas;
+        }
+        /// <summary>
+        /// Cabecera: public static List<clsPersona> Listado_Simple_Personas_DAL()
+        /// Descripcion: Devuelve el conjunto de personas reducido que se encuentran en la base de datos a la q se conecta
+        /// Precondiciones: Ninguna
+        /// Postcondiciones: todos los datos de la lista existen en la base de datos
+        /// </summary>
+        /// <returns> El listado de todas las personas que existen en la base de datos simplificado</returns>
+        public static List<clsPersona> Listado_Simple_Personas_DAL()
+        {
+            List<clsPersona> personas = new List<clsPersona>();
+            SqlCommand instruccion = new SqlCommand();
+            SqlDataReader lector;
+            clsPersona oPersona;
+
+            try { 
+                conexionDAL.abrirConexion();
+                instruccion.CommandText = "SELECT IDPersona, nombrePersona, apellidosPersona FROM Personas";
+                instruccion.Connection = conexionDAL.SqlConexion;
+                lector = instruccion.ExecuteReader();
+                if (lector.HasRows)
+                {
+                    while (lector.Read())
+                    {
+                        oPersona = new clsPersona();
+                        oPersona.Id = (int)lector["IDPersona"];
+                        oPersona.Nombre = (string)lector["nombrePersona"];
+                        oPersona.Apellidos = (string)lector["apellidosPersona"];
+                        personas.Add(oPersona);
+                    }
+                }
+                lector.Close();
+            }
+            finally
+            {
+                conexionDAL.cerrarConexion();
+            }
 
             return personas;
         }
@@ -53,20 +100,24 @@ namespace CRUD_Personas_DAL.Listados
             SqlCommand instruccion = new SqlCommand();
             SqlDataReader lector;
 
-            conexionDAL.abrirConexion();
-            instruccion.CommandText = @"SELECT IDPersona, nombrePersona, apellidosPersona, fechaNacimiento, telefono, direccion, IDDepartamento, Foto FROM Personas 
-                                        WHERE IDPersona= @idPersona";
-            instruccion.Parameters.AddWithValue("@idPersona", idPersona);
-            instruccion.Connection = conexionDAL.SqlConexion;
-            lector = instruccion.ExecuteReader();
-            if (lector.HasRows)
-            {
-                lector.Read();
-                oPersona = generaPersonaLeida(lector);
+            try {
+                conexionDAL.abrirConexion();
+                instruccion.CommandText = @"SELECT IDPersona, nombrePersona, apellidosPersona, fechaNacimiento, telefono, direccion, IDDepartamento, Foto FROM Personas 
+                                            WHERE IDPersona= @idPersona";
+                instruccion.Parameters.AddWithValue("@idPersona", idPersona);
+                instruccion.Connection = conexionDAL.SqlConexion;
+                lector = instruccion.ExecuteReader();
+                if (lector.HasRows)
+                {
+                    lector.Read();
+                    oPersona = generaPersonaLeida(lector);
+                }
+                lector.Close();
             }
-            lector.Close();
-            conexionDAL.cerrarConexion();
-            
+            finally
+            {
+                conexionDAL.cerrarConexion();
+            }
             return oPersona;
         }
         /// <summary>
@@ -88,7 +139,7 @@ namespace CRUD_Personas_DAL.Listados
             oPersona.Direccion = lector["direccion"] != System.DBNull.Value ? (string)lector["direccion"] : null;
             oPersona.IdDepartamento = (int)lector["IDDepartamento"];
             oPersona.Foto = lector["Foto"] != System.DBNull.Value ? (Byte[])lector["Foto"] : null;
-                 
+
             DateTime time = new DateTime();
             Console.WriteLine(time);
             return oPersona;

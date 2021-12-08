@@ -17,7 +17,6 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Models.ViewModels
         }
         public PersonaNombreDepartamentoVM() { }
 
-
         [Display(Name = "Nombre del departamento: ")]
         public string NombreDepartamento { get => nombreDepartamento; set => nombreDepartamento = value; }
 

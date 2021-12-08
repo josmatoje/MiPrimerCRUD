@@ -22,9 +22,6 @@ namespace _16_Insertar_imagen_en_BBDD_UI.Models.DAL
             int resultado = 0;
             SqlConnection connection = new SqlConnection();
 
-            
-          
-
             SqlCommand miComando = new SqlCommand();
 
             //Añadimos los datos al comando
