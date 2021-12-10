@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <NavigationView x:Name="EleccionPrincipal" ItemInvoked="EleccionPrincipal_ItemInvoked" PaneDisplayMode="Auto">
+    <NavigationView x:Name="EleccionPrincipal" ItemInvoked="EleccionPrincipal_ItemInvoked" PaneDisplayMode="Auto" IsSettingsVisible="False" IsBackButtonVisible="Collapsed">
         <NavigationView.MenuItems>
             <NavigationViewItem x:Name="vistaPersonas" Icon="People" Content="Personas"/>
             <NavigationViewItem x:Name="vistaDepartamentos" Icon="Manage" Content="Departamentos"/>

@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <NavigationView x:ConnectionId='2' x:Name="EleccionPrincipal"                                             PaneDisplayMode="Auto">
+    <NavigationView x:ConnectionId='2' x:Name="EleccionPrincipal"                                             PaneDisplayMode="Auto" IsSettingsVisible="False" IsBackButtonVisible="Collapsed">
         <NavigationView.MenuItems>
             <NavigationViewItem x:ConnectionId='3' x:Name="vistaPersonas" Icon="People" Content="Personas"/>
             <NavigationViewItem x:ConnectionId='4' x:Name="vistaDepartamentos" Icon="Manage" Content="Departamentos"/>

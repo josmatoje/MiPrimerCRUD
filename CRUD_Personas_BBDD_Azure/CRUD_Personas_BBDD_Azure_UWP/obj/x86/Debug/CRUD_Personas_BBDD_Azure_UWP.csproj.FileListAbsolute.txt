@@ -171,3 +171,26 @@ D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_
 D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\GalaSoft.MvvmLight.dll
 D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\GalaSoft.MvvmLight.pdb
 D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\GalaSoft.MvvmLight.Platform.pri.xml
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\Views\Error.xbf
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\Views\VistaAnhadirEditarDepartamento.xbf
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\Views\VistaAnhadirEditarPersona.xbf
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\CommonServiceLocator.dll
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\GalaSoft.MvvmLight.Platform.pdb
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\GalaSoft.MvvmLight.dll
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\GalaSoft.MvvmLight.pdb
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\Views\Error.g.i.cs
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\Views\Error.g.cs
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\Views\VistaAnhadirEditarDepartamento.g.i.cs
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\Views\VistaAnhadirEditarDepartamento.g.cs
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\Views\VistaAnhadirEditarPersona.g.i.cs
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\Views\VistaAnhadirEditarPersona.g.cs
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\Views\Error.xaml
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\Views\VistaAnhadirEditarDepartamento.xaml
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\Views\VistaAnhadirEditarPersona.xaml
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\Views\Error.xbf
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\Views\VistaAnhadirEditarDepartamento.xbf
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\Views\VistaAnhadirEditarPersona.xbf
+D:\jmmata\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\GalaSoft.MvvmLight.Platform.pri.xml

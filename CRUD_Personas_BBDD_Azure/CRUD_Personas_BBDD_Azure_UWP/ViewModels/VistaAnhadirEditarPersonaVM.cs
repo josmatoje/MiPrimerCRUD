@@ -79,7 +79,10 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
             //TODO: unificar el metodo de insercion y edicion en la DAL
             try
             {
-                if (OPersona.Telefono!=null && OPersona.Telefono.Length > 12)
+                if (OPersona.Nombre.Length>30 )
+                {
+                    VistaAnhadirEditarPersona.
+                }else if (OPersona.Telefono!=null && OPersona.Telefono.Length > 12)
                 {
 
                     ContentDialog errorLongitud = new ContentDialog()
@@ -95,7 +98,7 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
 
                     ContentDialog errorLongitud = new ContentDialog()
                     {
-                        Title = "FECHA NO VALIDA",
+                        Title = "FECHA NO VALI DA",
                         Content = "La fecha de nacimiento es superior a la actual.",
                         CloseButtonText = "Confirmar"
                     };
@@ -129,7 +132,7 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
                 ContentDialog mensajeExito = new ContentDialog()
                 {
                     Title = "ERROR",
-                    Content = "No se ha eliminado la persona correctamente",
+                    Content = "No se ha guardado la persona correctamente",
                     SecondaryButtonText = "Volver"
                 };
 
