@@ -21,6 +21,8 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
         private DelegateCommand eliminador;
         private ObservableCollection<clsDepartamento> listaDepartamentoCompleta;
         private ObservableCollection<clsDepartamento> listaDepartamentoOfrecida;
+        private ObservableCollection<clsPersona> listaPersonaCompleta;
+        private ObservableCollection<clsPersona> listaPersonaOfrecida;
         private string textBoxBuscar;
         private clsDepartamento departamentoSeleccionado;
         #endregion
@@ -33,12 +35,14 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
             try
             {
                 ListaDepartamentoCompleta = new ObservableCollection<clsDepartamento>(Listados_Departamentos_BL.Listado_Completo_Departamentos_BL());
+                ListaPersonaCompleta = new ObservableCollection<clsPersona>(Listados_Personas_BL.Listado_Completo_Personas_BL());
             }
             catch (Exception ex)
             {
                 throw ex;
             }
             ListaDepartamentoOfrecida = ListaDepartamentoCompleta;
+            ListaPersonaOfrecida = new ObservableCollection<clsPersona>();
         }
         #endregion
         #region propiedades publicas
@@ -47,6 +51,8 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
         public DelegateCommand Eliminador { get => eliminador; }
         public ObservableCollection<clsDepartamento> ListaDepartamentoCompleta { get => listaDepartamentoCompleta; set => listaDepartamentoCompleta = value; }
         public ObservableCollection<clsDepartamento> ListaDepartamentoOfrecida { get => listaDepartamentoOfrecida; set => listaDepartamentoOfrecida = value; }
+        public ObservableCollection<clsPersona> ListaPersonaCompleta { get => listaPersonaCompleta; set => listaPersonaCompleta = value; }
+        public ObservableCollection<clsPersona> ListaPersonaOfrecida { get => listaPersonaOfrecida; set => listaPersonaOfrecida = value; }
         public string TextBoxBuscar
         {
             get => textBoxBuscar;
@@ -67,9 +73,11 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
             set
             {
                 departamentoSeleccionado = value;
+                NotifyPropertyChanged(nameof(DepartamentoSeleccionado));
+                ListaPersonaOfrecida = new ObservableCollection<clsPersona> (ListaPersonaCompleta.Where(x => x.IdDepartamento==departamentoSeleccionado.ID));
+                NotifyPropertyChanged(nameof(ListaPersonaOfrecida));
                 Eliminador.RaiseCanExecuteChanged();
                 Editor.RaiseCanExecuteChanged();
-                NotifyPropertyChanged(nameof(DepartamentoSeleccionado));
             }
         }
         #endregion

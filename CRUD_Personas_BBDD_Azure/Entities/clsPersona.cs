@@ -57,14 +57,15 @@ namespace CRUD_Personas_Entities
         }
         public clsPersona(clsPersona oPersona)
         {
-            Id = oPersona.Id;
-            Nombre = oPersona.Nombre;
-            Apellidos = oPersona.Apellidos;
-            FechaNacimiento = oPersona.FechaNacimiento;
-            Direccion = oPersona.Direccion;
-            Telefono = oPersona.Telefono;
-            Foto = oPersona.Foto;
-            IdDepartamento = oPersona.IdDepartamento;
+                Id = oPersona.Id;
+                Nombre = oPersona.Nombre;
+                Apellidos = oPersona.Apellidos;
+                FechaNacimiento = oPersona.FechaNacimiento;
+                Direccion = oPersona.Direccion;
+                Telefono = oPersona.Telefono;
+                Foto = oPersona.Foto;
+                IdDepartamento = oPersona.IdDepartamento;
+            
         }
         #endregion
     }

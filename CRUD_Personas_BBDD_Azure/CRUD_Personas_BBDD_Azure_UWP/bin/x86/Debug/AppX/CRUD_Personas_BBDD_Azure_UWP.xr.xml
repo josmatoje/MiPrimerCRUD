@@ -19,6 +19,8 @@
     <RootPropertyPathName Name="Direccion" />
     <RootPropertyPathName Name="FechaNacimiento" />
     <RootPropertyPathName Name="Apellidos" />
+    <RootPropertyPathName Name="Tipo" />
+    <RootPropertyPathName Name="ListaPersonaOfrecida" />
     <RootPropertyPathName Name="DepartamentoSeleccionado" />
     <RootPropertyPathName Name="ListaDepartamentoOfrecida" />
     <RootPropertyPathName Name="Editor" />
@@ -110,6 +112,7 @@
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="Child" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Icon" />
@@ -190,10 +193,15 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="MinWidth" />
+      <RootEvent Name="DoubleTapped" />
     </RootType>
     <RootType FullName="CRUD_Personas_BBDD_Azure_UWP.Views.VistaDepartamentos" />
     <RootType FullName="CRUD_Personas_BBDD_Azure_UWP.ViewModels.VistaPersonasVM" />
     <RootType FullName="CRUD_Personas_BBDD_Azure_UWP.ViewModels.Utilidades.clsShortDateConverter" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Fill" />
+    </RootType>
     <RootType FullName="CRUD_Personas_BBDD_Azure_UWP.Views.VistaPersona" />
   </Roots.RootTypes>
 </Roots>

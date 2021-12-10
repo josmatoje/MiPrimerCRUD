@@ -7,7 +7,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" d:DesignHeight="1135.85" d:DesignWidth="1504">
 
     <Page.DataContext>
         <vm:VistaAnhadirEditarPersonaVM/>
@@ -15,38 +15,44 @@
     <Page.Resources>
         <dateConverter:clsDateConverter x:Key="dateConver"/>
     </Page.Resources>
-    <Border MaxWidth="800" MinWidth="550" MaxHeight="600" CornerRadius="20" BorderThickness="3" BorderBrush="DimGray" >
-        <ScrollViewer  VerticalScrollBarVisibility="Auto" HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto" VerticalScrollMode="Auto">
-            <RelativePanel>
-                <AppBarButton x:Name="back" Icon="Back" Click="back_Click"/>
-                <RelativePanel RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True">
-                    <TextBlock x:Name="nombre" Text="Nombre: *" Margin="0,10" FontSize="20"/>
-                    <TextBox x:Name="nombrePersona" Text="{Binding OPersona.Nombre, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" TextChanged="nombreApellido_TextChanged" MinWidth="300" Margin="5,10" FontSize="20" RelativePanel.AlignLeftWith="fechaNacimientoPersona"/>
-                    <TextBlock x:Name="apellidos" Text="Apellidos: *" Margin="0,10" FontSize="20" RelativePanel.Below="nombre"/>
-                    <TextBox x:Name="apellidosPersona" Text="{Binding OPersona.Apellidos, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" TextChanged="nombreApellido_TextChanged" MinWidth="300" Margin="5,10" FontSize="20" RelativePanel.AlignLeftWith="fechaNacimientoPersona" RelativePanel.Below="nombre"/>
-                    <TextBlock x:Name="fechaNacimiento" Text="Fecha de nacimiento: " Margin="0,10,20,10" FontSize="20" RelativePanel.Below="apellidos"/>
-                    <DatePicker x:Name="fechaNacimientoPersona" SelectedDate="{Binding OPersona.FechaNacimiento, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, Converter={StaticResource dateConver}}" MinWidth="300" Margin="5,10" FontSize="20" RelativePanel.RightOf="fechaNacimiento" RelativePanel.Below="apellidos"/>
-                    <TextBlock x:Name="direccion" Text="Dirección: " Margin="0,10" FontSize="20" RelativePanel.Below="fechaNacimiento"/>
-                    <TextBox x:Name="direccionPersona" Text="{Binding OPersona.Direccion, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" MinWidth="300" Margin="5,10" FontSize="20" RelativePanel.AlignLeftWith="fechaNacimientoPersona" RelativePanel.Below="fechaNacimiento"/>
-                    <TextBlock x:Name="telefono" Text="telefono: " Margin="0,10" FontSize="20" RelativePanel.Below="direccion"/>
-                    <TextBox x:Name="telefonoPersona" Text="{Binding OPersona.Telefono, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" MinWidth="300" Margin="5,10" FontSize="20" RelativePanel.AlignLeftWith="fechaNacimientoPersona" RelativePanel.Below="direccion"/>
-                    <TextBlock x:Name="departamento" Text="Departamento: " Margin="0,10" FontSize="20" RelativePanel.Below="telefono"/>
-                    <ComboBox x:Name="departamentoPersona" ItemsSource="{Binding ListaDepartamentos}" SelectedValue="{Binding OPersona.IdDepartamento, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" SelectedValuePath="ID"  MinWidth="300" Margin="5,10,0,5" FontSize="20" RelativePanel.AlignLeftWith="fechaNacimientoPersona" RelativePanel.Below="telefono">
-                        <!--ItemTemplate="{Binding Nombre}"-->
-                        <ComboBox.ItemTemplate>
-                            <DataTemplate>
-                                <TextBlock x:Name="nombreDepartamento" Text="{Binding Nombre}"/>
-                            </DataTemplate>
-                        </ComboBox.ItemTemplate>
-                    </ComboBox>
-                    <TextBlock x:Name="foto" Text="Foto: " Margin="0,10" FontSize="20" RelativePanel.Below="departamento"/>
-                    <Image x:Name="fotoPersona" Source="{Binding Path=Foto.Bitmap}" MinHeight="200" MaxHeight="200" MinWidth="150" MaxWidth="150" Margin="5" RelativePanel.AlignHorizontalCenterWith="fechaNacimientoPersona" RelativePanel.Below="departamento"/>
-                    <Button x:Name="seleccionaFoto" Content="Seleccionar imagen" Command="{Binding Path=SeleccionarFoto}" Margin="5" RelativePanel.AlignLeftWith="fechaNacimientoPersona" RelativePanel.Below="fotoPersona"/>
-                    <!--Click="back_Click" La actualizacion en la BBDD tardá más q la instruccion de volver atras y la lista no aparece actualizada-->
-                    <Button x:Name="guardar" Content="Guardar" Command="{Binding GuardarFoto }" Margin="10" RelativePanel.Below="seleccionaFoto" RelativePanel.AlignRightWithPanel="True"/>
-                    <TextBlock x:Name="advertencia" Text="* Campos obligatorios" FontWeight="Bold"  RelativePanel.AlignVerticalCenterWith="guardar"/>
+    <RelativePanel x:Name="main" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <TextBlock x:Name="titulo" Text="{Binding Tipo}" FontSize="50" Margin="5,0" />
+        <TextBlock x:Name="tituloNombre" Text="{Binding OPersona.Nombre, UpdateSourceTrigger=PropertyChanged}" FontSize="50" Margin="5,0" RelativePanel.AlignVerticalCenterWith="titulo" RelativePanel.RightOf="titulo"/>
+        <TextBlock x:Name="tituloApellido" Text="{Binding OPersona.Apellidos, UpdateSourceTrigger=PropertyChanged}" FontSize="50" Margin="5,0" RelativePanel.AlignVerticalCenterWith="titulo" RelativePanel.RightOf="tituloNombre"/>
+        <!--<Rectangle  Height="2" Fill="Black" RelativePanel.Below="titulo" RelativePanel.AlignLeftWith="titulo" RelativePanel.AlignRightWith="tituloApellido"/>-->
+        <Border x:Name="borde" Margin="20" MaxWidth="800" MinWidth="550" MaxHeight="700" CornerRadius="20" BorderThickness="3" BorderBrush="DimGray" RelativePanel.Below="titulo" >
+            <ScrollViewer  VerticalScrollBarVisibility="Auto" HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto" VerticalScrollMode="Auto">
+                <RelativePanel>
+                    <AppBarButton x:Name="back" Icon="Back" Click="back_Click"/>
+                    <RelativePanel Margin="40,0" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True"  RelativePanel.Below="back">
+                        <TextBlock x:Name="nombre" Text="Nombre: *" FontWeight="Bold" Margin="0,10" FontSize="20"/>
+                        <TextBox x:Name="nombrePersona" Text="{Binding OPersona.Nombre, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" TextChanged="nombreApellido_TextChanged" MinWidth="300" Margin="5,10" FontSize="20" RelativePanel.AlignLeftWith="fechaNacimientoPersona"/>
+                        <TextBlock x:Name="apellidos" Text="Apellidos: *" FontWeight="Bold" Margin="0,10" FontSize="20" RelativePanel.Below="nombre"/>
+                        <TextBox x:Name="apellidosPersona" Text="{Binding OPersona.Apellidos, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" TextChanged="nombreApellido_TextChanged" MinWidth="300" Margin="5,10" FontSize="20" RelativePanel.AlignLeftWith="fechaNacimientoPersona" RelativePanel.Below="nombre"/>
+                        <TextBlock x:Name="fechaNacimiento" Text="Fecha de nacimiento: " FontWeight="Bold" Margin="0,10,20,10" FontSize="20" RelativePanel.Below="apellidos"/>
+                        <DatePicker x:Name="fechaNacimientoPersona" SelectedDate="{Binding OPersona.FechaNacimiento, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, Converter={StaticResource dateConver}}" MinWidth="300" Margin="5,10" FontSize="20" RelativePanel.RightOf="fechaNacimiento" RelativePanel.Below="apellidos"/>
+                        <TextBlock x:Name="direccion" Text="Dirección: " FontWeight="Bold" Margin="0,10" FontSize="20" RelativePanel.Below="fechaNacimiento"/>
+                        <TextBox x:Name="direccionPersona" Text="{Binding OPersona.Direccion, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" MinWidth="300" Margin="5,10" FontSize="20" RelativePanel.AlignLeftWith="fechaNacimientoPersona" RelativePanel.Below="fechaNacimiento"/>
+                        <TextBlock x:Name="telefono" Text="telefono: " FontWeight="Bold" Margin="0,10" FontSize="20" RelativePanel.Below="direccion"/>
+                        <TextBox x:Name="telefonoPersona" Text="{Binding OPersona.Telefono, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" MinWidth="300" Margin="5,10" FontSize="20" RelativePanel.AlignLeftWith="fechaNacimientoPersona" RelativePanel.Below="direccion"/>
+                        <TextBlock x:Name="departamento" Text="Departamento: " FontWeight="Bold" Margin="0,10" FontSize="20" RelativePanel.Below="telefono"/>
+                        <ComboBox x:Name="departamentoPersona" ItemsSource="{Binding ListaDepartamentos}" SelectedValue="{Binding OPersona.IdDepartamento, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" SelectedValuePath="ID"  MinWidth="300" Margin="5,10,0,5" FontSize="20" RelativePanel.AlignLeftWith="fechaNacimientoPersona" RelativePanel.Below="telefono">
+                            <!--ItemTemplate="{Binding Nombre}"-->
+                            <ComboBox.ItemTemplate>
+                                <DataTemplate>
+                                    <TextBlock x:Name="nombreDepartamento" Text="{Binding Nombre}"/>
+                                </DataTemplate>
+                            </ComboBox.ItemTemplate>
+                        </ComboBox>
+                        <TextBlock x:Name="foto" Text="Foto: " FontWeight="Bold" Margin="0,10" FontSize="20" RelativePanel.Below="departamento"/>
+                        <Image x:Name="fotoPersona" Source="{Binding Path=Foto.Bitmap}" MinHeight="200" MaxHeight="200" MinWidth="150" MaxWidth="150" Margin="5" RelativePanel.AlignHorizontalCenterWith="fechaNacimientoPersona" RelativePanel.Below="departamento"/>
+                        <Button x:Name="seleccionaFoto" Content="Seleccionar imagen" Command="{Binding Path=SeleccionarFoto}" Margin="5" RelativePanel.AlignLeftWith="fechaNacimientoPersona" RelativePanel.Below="fotoPersona"/>
+                        <!--Click="back_Click" La actualizacion en la BBDD tardá más q la instruccion de volver atras y la lista no aparece actualizada-->
+                        <Button x:Name="guardar" Content="Guardar" Command="{Binding GuardarFoto }" Margin="10" RelativePanel.Below="seleccionaFoto" RelativePanel.AlignRightWithPanel="True"/>
+                        <TextBlock x:Name="advertencia" Text="* Campos obligatorios" FontWeight="Bold"  RelativePanel.AlignVerticalCenterWith="guardar"/>
+                    </RelativePanel>
                 </RelativePanel>
-            </RelativePanel>
-        </ScrollViewer>
-    </Border>
+            </ScrollViewer>
+            </Border>
+    </RelativePanel>
 </Page>

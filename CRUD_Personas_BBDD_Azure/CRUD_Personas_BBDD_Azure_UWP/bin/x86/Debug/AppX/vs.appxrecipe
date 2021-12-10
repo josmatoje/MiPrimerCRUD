@@ -30,13 +30,29 @@
     <AppXManifest Include="D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2021-12-08T23:09:35.566</Modified>
+      <Modified>2021-12-10T00:53:51.182</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\CRUD_Personas_BBDD_Azure_UWP.exe">
       <PackagePath>entrypoint\CRUD_Personas_BBDD_Azure_UWP.exe</PackagePath>
-      <Modified>2021-12-08T23:09:35.028</Modified>
+      <Modified>2021-12-10T00:53:50.372</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\josem\.nuget\packages\commonservicelocator\2.0.2\lib\netstandard2.0\CommonServiceLocator.dll">
+      <PackagePath>CommonServiceLocator.dll</PackagePath>
+      <Modified>2018-01-03T12:27:08.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\josem\.nuget\packages\mvvmlightlibs\5.4.1.1\lib\uap10.0\GalaSoft.MvvmLight.Extras.dll">
+      <PackagePath>GalaSoft.MvvmLight.Extras.dll</PackagePath>
+      <Modified>2018-02-04T23:10:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\josem\.nuget\packages\mvvmlightlibs\5.4.1.1\lib\uap10.0\GalaSoft.MvvmLight.Platform.dll">
+      <PackagePath>GalaSoft.MvvmLight.Platform.dll</PackagePath>
+      <Modified>2018-02-04T23:10:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\josem\.nuget\packages\mvvmlightlibs\5.4.1.1\lib\uap10.0\GalaSoft.MvvmLight.dll">
+      <PackagePath>GalaSoft.MvvmLight.dll</PackagePath>
+      <Modified>2018-02-04T23:10:46.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.12\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -60,15 +76,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Debug\netstandard2.0\CRUD_Personas_BL.dll">
       <PackagePath>CRUD_Personas_BL.dll</PackagePath>
-      <Modified>2021-12-08T17:30:36.864</Modified>
+      <Modified>2021-12-09T23:18:56.785</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\Entities\bin\Debug\netstandard2.0\CRUD_Personas_Entities.dll">
       <PackagePath>CRUD_Personas_Entities.dll</PackagePath>
-      <Modified>2021-12-08T17:30:36.502</Modified>
+      <Modified>2021-12-09T23:18:56.468</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\BussinesLogic\bin\Debug\netstandard2.0\CRUD_Personas_DAL.dll">
       <PackagePath>CRUD_Personas_DAL.dll</PackagePath>
-      <Modified>2021-12-08T17:30:36.685</Modified>
+      <Modified>2021-12-09T23:18:56.625</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.19041.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -114,39 +130,39 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\CRUD_Personas_BBDD_Azure_UWP.xr.xml">
       <PackagePath>CRUD_Personas_BBDD_Azure_UWP.xr.xml</PackagePath>
-      <Modified>2021-12-08T23:09:34.945</Modified>
+      <Modified>2021-12-09T22:42:42.730</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2021-12-08T23:09:34.965</Modified>
+      <Modified>2021-12-10T00:53:50.299</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\Views\Bienvenida.xbf">
       <PackagePath>Views\Bienvenida.xbf</PackagePath>
-      <Modified>2021-12-08T23:09:34.965</Modified>
+      <Modified>2021-12-10T00:53:50.299</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\Views\Error.xbf">
       <PackagePath>Views\Error.xbf</PackagePath>
-      <Modified>2021-12-08T23:09:34.965</Modified>
+      <Modified>2021-12-10T00:53:50.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\Views\MainPage.xbf">
       <PackagePath>Views\MainPage.xbf</PackagePath>
-      <Modified>2021-12-08T23:09:34.965</Modified>
+      <Modified>2021-12-10T00:53:50.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\Views\VistaAnhadirEditarDepartamento.xbf">
       <PackagePath>Views\VistaAnhadirEditarDepartamento.xbf</PackagePath>
-      <Modified>2021-12-08T23:09:34.965</Modified>
+      <Modified>2021-12-10T00:53:50.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\Views\VistaAnhadirEditarPersona.xbf">
       <PackagePath>Views\VistaAnhadirEditarPersona.xbf</PackagePath>
-      <Modified>2021-12-08T23:09:34.960</Modified>
+      <Modified>2021-12-10T00:53:50.294</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\Views\VistaDepartamentos.xbf">
       <PackagePath>Views\VistaDepartamentos.xbf</PackagePath>
-      <Modified>2021-12-08T23:09:34.966</Modified>
+      <Modified>2021-12-10T00:53:50.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\Views\VistaPersona.xbf">
       <PackagePath>Views\VistaPersona.xbf</PackagePath>
-      <Modified>2021-12-08T23:09:34.965</Modified>
+      <Modified>2021-12-10T00:53:50.299</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.19041.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -154,11 +170,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2021-12-08T22:25:34.393</Modified>
+      <Modified>2021-12-10T00:18:02.591</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\Core\CRUD_Personas_BBDD_Azure_UWP.exe">
       <PackagePath>CRUD_Personas_BBDD_Azure_UWP.exe</PackagePath>
-      <Modified>2021-12-08T23:09:35.563</Modified>
+      <Modified>2021-12-10T00:53:51.179</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

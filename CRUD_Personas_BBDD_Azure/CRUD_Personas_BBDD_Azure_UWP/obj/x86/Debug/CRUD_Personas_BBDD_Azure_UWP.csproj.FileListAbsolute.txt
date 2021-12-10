@@ -163,3 +163,11 @@ D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_
 D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\Views\VistaAnhadirEditarDepartamento.xaml
 D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\Views\VistaAnhadirEditarDepartamento.xbf
 D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\Views\VistaAnhadirEditarDepartamento.xbf
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\CommonServiceLocator.dll
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\GalaSoft.MvvmLight.Platform.pdb
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\GalaSoft.MvvmLight.dll
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\bin\x86\Debug\GalaSoft.MvvmLight.pdb
+D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\obj\x86\Debug\GalaSoft.MvvmLight.Platform.pri.xml

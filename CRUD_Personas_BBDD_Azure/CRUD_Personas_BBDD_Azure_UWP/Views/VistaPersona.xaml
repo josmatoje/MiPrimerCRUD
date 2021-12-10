@@ -32,21 +32,25 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <ScrollViewer RelativePanel.RightOf="lista" RelativePanel.AlignTopWith="lista" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Margin="30" Padding="20"
+        <TextBlock x:Name="titulo" Text="Detalles:" FontSize="50" Margin="5" RelativePanel.Below="find" RelativePanel.AlignLeftWith="scrlDatos"/>
+        <TextBlock x:Name="tituloNombre" Text="{Binding PersonaSeleccionada.Nombre, UpdateSourceTrigger=PropertyChanged}" FontSize="50" Margin="5" RelativePanel.AlignVerticalCenterWith="titulo" RelativePanel.RightOf="titulo"/>
+        <TextBlock x:Name="tituloApellido" Text="{Binding PersonaSeleccionada.Apellidos, UpdateSourceTrigger=PropertyChanged}" FontSize="50" Margin="5" RelativePanel.AlignVerticalCenterWith="titulo" RelativePanel.RightOf="tituloNombre"/>
+        <Rectangle Height="2" Fill="Black" RelativePanel.Below="titulo" RelativePanel.AlignLeftWith="titulo" RelativePanel.AlignRightWith="tituloApellido"/>
+        <ScrollViewer x:Name="scrlDatos" RelativePanel.RightOf="lista" RelativePanel.AlignTopWith="lista" RelativePanel.AlignRightWithPanel="True" RelativePanel.AlignBottomWithPanel="True" Margin="30" Padding="20"
                        VerticalScrollBarVisibility="Auto" HorizontalScrollMode="Auto" HorizontalScrollBarVisibility="Auto" VerticalScrollMode="Auto">
             <RelativePanel x:Name="datos">
                 <Image x:Name="imagen" Source="{Binding Path=OImagen.Bitmap, UpdateSourceTrigger=PropertyChanged}" MaxHeight="300" MinHeight="100" MaxWidth="300" MinWidth="200" Margin="100,0" RelativePanel.AlignHorizontalCenterWithPanel="True"/>
-                <TextBlock x:Name="nombre" RelativePanel.Below="imagen" Text="Nombre:" Margin="0,10" FontSize="20"/>
+                <TextBlock x:Name="nombre" RelativePanel.Below="imagen" Text="Nombre:" FontWeight="Bold" Margin="0,10" FontSize="20"/>
                 <TextBlock x:Name="nombrePersona" Text="{Binding PersonaSeleccionada.Nombre, UpdateSourceTrigger=PropertyChanged}" Margin="5,10" FontSize="20" RelativePanel.AlignLeftWith="fechaNacimientoPersona" RelativePanel.Below="imagen"/>
-                <TextBlock x:Name="apellidos" Text="Apellidos:" Margin="0,10" FontSize="20" RelativePanel.AlignLeftWith="nombre" RelativePanel.Below="nombre"/>
+                <TextBlock x:Name="apellidos" Text="Apellidos:" FontWeight="Bold" Margin="0,10" FontSize="20" RelativePanel.AlignLeftWith="nombre" RelativePanel.Below="nombre"/>
                 <TextBlock x:Name="apellidosPersona" Text="{Binding PersonaSeleccionada.Apellidos, UpdateSourceTrigger=PropertyChanged}" Margin="5,10" FontSize="20" RelativePanel.AlignLeftWith="fechaNacimientoPersona" RelativePanel.Below="nombre"/>
-                <TextBlock x:Name="fechaNacimiento" Text="Fecha de nacimiento:" Margin="0,10,20,10" FontSize="20" RelativePanel.Below="apellidos"/>
+                <TextBlock x:Name="fechaNacimiento" Text="Fecha de nacimiento:" FontWeight="Bold" Margin="0,10,20,10" FontSize="20" RelativePanel.Below="apellidos"/>
                 <TextBlock x:Name="fechaNacimientoPersona" Text="{Binding PersonaSeleccionada.FechaNacimiento, Converter={StaticResource short}, UpdateSourceTrigger=PropertyChanged}" Margin="5,10" FontSize="20" RelativePanel.RightOf="fechaNacimiento" RelativePanel.Below="apellidos"/>
-                <TextBlock x:Name="direccion" Text="Dirección:" Margin="0,10" FontSize="20" RelativePanel.AlignLeftWith="nombre" RelativePanel.Below="fechaNacimiento"/>
+                <TextBlock x:Name="direccion" Text="Dirección:" FontWeight="Bold" Margin="0,10" FontSize="20" RelativePanel.AlignLeftWith="nombre" RelativePanel.Below="fechaNacimiento"/>
                 <TextBlock x:Name="direccionPersona" Text="{Binding PersonaSeleccionada.Direccion, UpdateSourceTrigger=PropertyChanged}" Margin="5,10" FontSize="20" RelativePanel.AlignLeftWith="fechaNacimientoPersona" RelativePanel.Below="fechaNacimiento"/>
-                <TextBlock x:Name="telefono" Text="telefono:" Margin="0,10" FontSize="20" RelativePanel.AlignLeftWith="nombre" RelativePanel.Below="direccion"/>
+                <TextBlock x:Name="telefono" Text="telefono:" FontWeight="Bold" Margin="0,10" FontSize="20" RelativePanel.AlignLeftWith="nombre" RelativePanel.Below="direccion"/>
                 <TextBlock x:Name="telefonoPersona" Text="{Binding PersonaSeleccionada.Telefono, UpdateSourceTrigger=PropertyChanged}" Margin="5,10" FontSize="20" RelativePanel.AlignLeftWith="fechaNacimientoPersona" RelativePanel.Below="direccion"/>
-                <TextBlock x:Name="departamento" Text="Departamento:" Margin="0,10" FontSize="20" RelativePanel.AlignLeftWith="nombre" RelativePanel.Below="telefono"/>
+                <TextBlock x:Name="departamento" Text="Departamento:" FontWeight="Bold" Margin="0,10" FontSize="20" RelativePanel.AlignLeftWith="nombre" RelativePanel.Below="telefono"/>
                 <TextBlock x:Name="departamentoPersona" Text="{Binding PersonaSeleccionada.NombreDepartamento, UpdateSourceTrigger=PropertyChanged}" Margin="5,10" FontSize="20" RelativePanel.AlignLeftWith="fechaNacimientoPersona" RelativePanel.Below="telefono"/>
             </RelativePanel>
         </ScrollViewer>

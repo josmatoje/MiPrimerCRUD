@@ -1,7 +1,10 @@
 ﻿using CRUD_Personas_BBDD_Azure_UWP.ViewModels.Utilidades;
+using CRUD_Personas_BBDD_Azure_UWP.Views;
 using CRUD_Personas_BL.Listados;
 using CRUD_Personas_BL.Manejadoras;
 using CRUD_Personas_Entities;
+using GalaSoft.MvvmLight.Command;
+using GalaSoft.MvvmLight.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,6 +12,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Devices.Enumeration;
 using Windows.UI.Xaml.Controls;
 
 namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
@@ -21,6 +25,7 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
         private clsImagen foto;
         private DelegateCommand seleccionarFoto;
         private DelegateCommand guardarFoto;
+        private string tipo;
         #endregion
         #region construccion
 
@@ -32,8 +37,9 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
             ListaDepartamentos = new ObservableCollection<clsDepartamento>(Listados_Departamentos_BL.Listado_Completo_Departamentos_BL());
             OPersona = new clsPersona();
             Foto = new clsImagen();
+            Tipo = "Crear";
         }
-        
+
         #endregion
         #region propiedades publicas
         public ObservableCollection<clsDepartamento> ListaDepartamentos { get => listaDepartamentos; set => listaDepartamentos = value; }
@@ -41,6 +47,7 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
         public DelegateCommand SeleccionarFoto { get => seleccionarFoto;}
         public DelegateCommand GuardarFoto { get => guardarFoto;}
         public clsImagen Foto { get => foto; set => foto = value; }
+        public string Tipo { get => tipo; set => tipo = value; }
         #endregion
         #region Commands
         private async void Seleccionar()
@@ -72,19 +79,50 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
             //TODO: unificar el metodo de insercion y edicion en la DAL
             try
             {
-                if (OPersona.Id == 0)
-                    Manejadores_Personas_BL.Insertar_Persona_BL(OPersona);
-                else
-                    Manejadores_Personas_BL.Editar_Persona_BL(OPersona);
-
-                ContentDialog mensajeConfirmacion = new ContentDialog()
+                if (OPersona.Telefono!=null && OPersona.Telefono.Length > 12)
                 {
-                    Title = "PERSONA GUARDADA",
-                    Content = "La persona se ha guardado",
-                    CloseButtonText = "Confirmar"
-                };
 
-                ContentDialogResult respuesta = await mensajeConfirmacion.ShowAsync();
+                    ContentDialog errorLongitud = new ContentDialog()
+                    {
+                        Title = "telefono demasiado largo",
+                        Content = "El telefono es demasiado largo.",
+                        CloseButtonText = "Confirmar"
+                    };
+
+                    ContentDialogResult ok = await errorLongitud.ShowAsync();
+                }else if (OPersona.FechaNacimiento != null && OPersona.FechaNacimiento >= DateTime.Now)
+                {
+
+                    ContentDialog errorLongitud = new ContentDialog()
+                    {
+                        Title = "FECHA NO VALIDA",
+                        Content = "La fecha de nacimiento es superior a la actual.",
+                        CloseButtonText = "Confirmar"
+                    };
+
+                    ContentDialogResult ok = await errorLongitud.ShowAsync();
+                }
+                else
+                {
+                    if (OPersona.Id == 0)
+                        Manejadores_Personas_BL.Insertar_Persona_BL(OPersona);
+                    else
+                        Manejadores_Personas_BL.Editar_Persona_BL(OPersona);
+
+                    ContentDialog mensajeConfirmacion = new ContentDialog()
+                    {
+                        Title = "PERSONA GUARDADA",
+                        Content = "La persona se ha guardado",
+                        CloseButtonText = "Confirmar"
+                    };
+
+                    ContentDialogResult respuesta = await mensajeConfirmacion.ShowAsync();
+
+                    //new RelayCommand(() =>
+                    //{
+                    //    new NavigationService().NavigateTo(nameof(VistaPersona));
+                    //});
+                }
             }
             catch
             {

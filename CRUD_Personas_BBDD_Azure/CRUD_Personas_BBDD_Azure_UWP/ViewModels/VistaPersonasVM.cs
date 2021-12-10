@@ -51,7 +51,6 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
             OImagen = new clsImagen();
         }
         #endregion
-
         #region propiedades publicas
         public DelegateCommand Buscador { get => buscador; }
         public DelegateCommand Editor { get => editor; }
@@ -126,14 +125,18 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
                 editor.RaiseCanExecuteChanged();
             }
         }
-
         public List<clsDepartamento> ListaDepartamentos { get => listaDepartamentos; set => listaDepartamentos = value; }
         public clsImagen OImagen { get => oImagen; set => oImagen = value; }
         #endregion
         #region comands
+        /// <summary>
+        /// Cabecera: private void Buscar()
+        /// Descripcion: Metodo que filtra la lista de personas segun los datos introducidos
+        /// Precondiciones: ninguna
+        /// Postcondiciones:ninguna
+        /// </summary>
         private void Buscar()
         {
-
             ListaPersonaOfrecido = new ObservableCollection<PersonaNombreDepartamento>();
             List<clsPersona> auxPersonas = ListaPersonaCompleto.Where(personas => personas.Nombre.ToLower().Contains(textBoxBuscar) ||
                                                    personas.Apellidos.ToLower().Contains(textBoxBuscar)).ToList();
@@ -145,14 +148,33 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
             
             NotifyPropertyChanged(nameof(ListaPersonaOfrecido));
         }
+        /// <summary>
+        /// Cabecera: private bool SePuedeBuscar()
+        /// Descripcion: Metodo necesario para habilitar y deshabilitar el Command de buscar
+        /// Precondiciones: ninguna
+        /// Postcondiciones:ninguna
+        /// </summary>
+        /// <returns> Un buleano que indica si se debe habilitar el boton de buscar</returns>
         private bool SePuedeBuscar()
         {   
             return !String.IsNullOrEmpty(textBoxBuscar);
         }
+        /// <summary>
+        /// Cabecera: private void Editar()
+        /// Descripcion: Metodo que sirve como funcion para construir el delegateComand
+        /// Precondiciones: ninguna
+        /// Postcondiciones:ninguna
+        /// </summary>
         private void Editar()
         {
             //Habilita edicion
         }
+        /// <summary>
+        /// Cabecera: private void Eliminar()
+        /// Descripcion: Muestra un mensaje para pedir la confirmacion de eliminar la persona indicada y, en caso afirmativo, la elimina
+        /// Precondiciones: ninguna
+        /// Postcondiciones:ninguna
+        /// </summary>
         private async void Eliminar()
         {
             ContentDialog mensajeConfirmacion = new ContentDialog()
@@ -179,18 +201,24 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
                 }
             }
         }
-
+        /// <summary>
+        /// Cabecera: private bool SePuedeEliminararEditar()
+        /// Descripcion: Metodo necesario para habilitar y deshabilitar el Command de elimitar y editar
+        /// Precondiciones: ninguna
+        /// Postcondiciones:ninguna
+        /// </summary>
+        /// <returns> Un buleano que indica si se debe habilitar el boton de editar y el de eliminar</returns>
         private bool SePuedeEliminararEditar()
         {   
             return !(personaSeleccionada is null);
         }
-
         #endregion
         #region mensaje error
         /// <summary>
         /// Cabecera: private async void MensajeError()
-        /// Descripcion: 
-        /// 
+        /// Descripcion: Método asincrono que muestra un mensaje de error
+        /// Precondiciones: ninguna
+        /// Postcondiciones:ninguna
         /// </summary>
         private async void MensajeError()
         {

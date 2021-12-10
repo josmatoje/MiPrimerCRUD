@@ -1,4 +1,5 @@
-﻿using CRUD_Personas_BBDD_Azure_UWP.ViewModels;
+﻿using CRUD_Personas_BBDD_Azure_UWP.Model;
+using CRUD_Personas_BBDD_Azure_UWP.ViewModels;
 using CRUD_Personas_Entities;
 using System;
 using System.Collections.Generic;
@@ -35,11 +36,39 @@ namespace CRUD_Personas_BBDD_Azure_UWP.Views
                 throw ex;
             }
         }
-
+        /// <summary>
+        /// Cabecera:protected override void OnNavigatedTo(NavigationEventArgs e)
+        /// Descripcion: Define la persona seleccionada para el VM de la vista en caso de recibir un parametro al ser invocada
+        /// Precondicion: en caso de recibir un parametro colo puede ser de tipo clsPersona
+        /// PostCondiciones: ninguna
+        /// </summary>
+        /// <param name="e">parametro que recibe al navegar hacia la vista de la clase</param>
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            var oPersona = e.Parameter; //Valoramos si la persona recibida por parametros es nula
+            if (oPersona != null)   //Si ha recibido algo, seteamos la persona seleccionada a este parametro
+                (this.DataContext as VistaPersonasVM).PersonaSeleccionada = new PersonaNombreDepartamento((clsPersona)oPersona); 
+        }
+        /// <summary>
+        /// Cabecera: private void Anhadir_Click(object sender, RoutedEventArgs e)
+        /// Descripcion:
+        /// Precondicion: ninguna
+        /// Postcondicion: ninguna
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Anhadir_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(VistaAnhadirEditarPersona));
         }
+        /// <summary>
+        /// Cabecera: private void Editar_Click(object sender, RoutedEventArgs e)
+        /// Descripcion:
+        /// Precondicion: ninguna
+        /// Postcondicion: ninguna
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Editar_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(VistaAnhadirEditarPersona), (this.DataContext as VistaPersonasVM).PersonaSeleccionada as clsPersona);

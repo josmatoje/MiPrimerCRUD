@@ -35,6 +35,8 @@ namespace CRUD_Personas_BBDD_Azure_UWP.Views
             if(param != null){
                 (this.DataContext as VistaAnhadirEditarPersonaVM).OPersona = param;
                 (this.DataContext as VistaAnhadirEditarPersonaVM).Foto.ArrayFoto = param.Foto;
+                (this.DataContext as VistaAnhadirEditarPersonaVM).Tipo="Editar";
+
             }
         }
 

@@ -45,7 +45,7 @@ Capa BL:
 		public static int Borrar_Persona_BL(int idPpersona)
 		public static int Editar_Persona_BL(clsPersona personaEditada)
 	
-Capa UI:
+Capa UI ASP.NET:
 	Controlers: DepartamentoController, PersonasController
 	Vistas:
 		-Departamentos: Create, Delete, Details, Edit, Index
@@ -61,3 +61,17 @@ Capa UI:
 		clsPersonaIndex:una persona para ser mostrada en una lista
 			atributos: int ID, String Nombre, String Apellidos, DateTime FechaNacimiento, String Direccion, 
 				String Telefono, String Departamento
+Capa UI UWP:
+Views:
+	MainPage: pagina principal con un NavigationView que muestra diferentes vistas segun se desee
+	Bienvenida: vista inicial de bienvenida
+	Error:vista que se mostrará en caso de algún error al moverse entre vistas
+	VistaPersonas: muestra un listado de personas y los datos de la persona seleccionada
+	VistaDepartamentos:muestra un listado de departamentos y los datos del departamentoseleccionada
+	VistaAnhadirEditarPersonas: vista para editar o crear una nueva persona
+	VistaAnhadirEditarDepartamentos: vista para editar o crear un nuevo departamento
+ViewModel:
+	Utilidades: 
+Model:
+	PersonaNombreDepartamento (hereda de clsPersona)
+	atributo: string nombreDepartamento

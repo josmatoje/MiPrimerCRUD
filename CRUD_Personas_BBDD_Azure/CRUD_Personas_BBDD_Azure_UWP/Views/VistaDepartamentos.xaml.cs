@@ -37,5 +37,11 @@ namespace CRUD_Personas_BBDD_Azure_UWP.Views
         {
             this.Frame.Navigate(typeof(VistaAnhadirEditarDepartamento), (this.DataContext as VistaDepartamentosVM).DepartamentoSeleccionado as clsDepartamento);
         }
+
+        private void listadoPersonas_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
+        {
+            clsPersona oPersona = ((ListView)sender).SelectedItem as clsPersona;
+            this.Frame.Navigate(typeof(VistaPersona),oPersona);
+        }
     }
 }

@@ -28,6 +28,9 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
         public DelegateCommand Guardador { get => guardador; }
         #endregion
         #region Comands
+        /// <summary>
+        /// 
+        /// </summary>
         private async void Guardar()
         {
             //TODO: unificar el metodo de insercion y edicion en la DAL
