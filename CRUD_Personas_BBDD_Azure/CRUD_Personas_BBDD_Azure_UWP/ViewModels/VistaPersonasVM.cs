@@ -106,7 +106,7 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
                             }
                             if ((ListaPersonaCompleto.First(x => x.Id == value.Id).IdDepartamento) == 0)
                             {
-                                ListaPersonaCompleto.First(x => x.Id == value.Id).IdDepartamento = personaSinDepartamento.IdDepartamento;
+                                ListaPersonaCompleto.First(x => x.Id == value.Id).IdDepartamento = personaSinDepartamento.IdDepartamento==0?1:personaSeleccionada.IdDepartamento;//Caso de error, ya solucionado
                                 personaSeleccionada.IdDepartamento = personaSinDepartamento.IdDepartamento;
                             }
                         }

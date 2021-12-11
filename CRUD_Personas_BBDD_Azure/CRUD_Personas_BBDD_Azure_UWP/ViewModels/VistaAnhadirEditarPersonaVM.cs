@@ -50,8 +50,15 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
         public string Tipo { get => tipo; set => tipo = value; }
         #endregion
         #region Commands
-        private async void Seleccionar()
+        /// <summary>
+        /// Cabecera: private void Seleccionar()
+        /// Descripcion: Abre el navegador para seleccionar una foto
+        /// Precondiciones: ninguna
+        /// Postcondiciones:ninguna
+        /// </summary>
+        private async void Seleccionar() //Se puede hacer simplemente un metodo
         {
+            //Podria ser un metodo
             var picker = new Windows.Storage.Pickers.FileOpenPicker();
             picker.ViewMode = Windows.Storage.Pickers.PickerViewMode.Thumbnail;
             picker.SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.PicturesLibrary;
@@ -69,77 +76,37 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
             //    NotifyPropertyChanged(nameof(Foto.Bitmap));
             }
         }
+        /// <summary>
+        /// Cabecera: private bool SePuedeSeleccionar()
+        /// Descripcion: Metodo necesario construir el Command de seleccionar
+        /// Precondiciones: ninguna
+        /// Postcondiciones:ninguna
+        /// </summary>
+        /// <returns> true</returns>
         private bool SePuedeSeleccionar()
         {
             return true;
         }
+        /// <summary>
+        /// Cabecera: private async void Guardar()
+        /// Descripcion: Asegura setear una serie de propiedades de la clase persona
+        /// Precondiciones: ninguna
+        /// Postcondiciones:ninguna
+        /// </summary>
         private async void Guardar()
         {
             OPersona.Foto = Foto.ArrayFoto; //Settear al seleccionar no almacena la foto en el objeto persona
-            //TODO: unificar el metodo de insercion y edicion en la DAL
-            try
-            {
-                if (OPersona.Nombre.Length>30 )
-                {
-                    VistaAnhadirEditarPersona.
-                }else if (OPersona.Telefono!=null && OPersona.Telefono.Length > 12)
-                {
-
-                    ContentDialog errorLongitud = new ContentDialog()
-                    {
-                        Title = "telefono demasiado largo",
-                        Content = "El telefono es demasiado largo.",
-                        CloseButtonText = "Confirmar"
-                    };
-
-                    ContentDialogResult ok = await errorLongitud.ShowAsync();
-                }else if (OPersona.FechaNacimiento != null && OPersona.FechaNacimiento >= DateTime.Now)
-                {
-
-                    ContentDialog errorLongitud = new ContentDialog()
-                    {
-                        Title = "FECHA NO VALI DA",
-                        Content = "La fecha de nacimiento es superior a la actual.",
-                        CloseButtonText = "Confirmar"
-                    };
-
-                    ContentDialogResult ok = await errorLongitud.ShowAsync();
-                }
-                else
-                {
-                    if (OPersona.Id == 0)
-                        Manejadores_Personas_BL.Insertar_Persona_BL(OPersona);
-                    else
-                        Manejadores_Personas_BL.Editar_Persona_BL(OPersona);
-
-                    ContentDialog mensajeConfirmacion = new ContentDialog()
-                    {
-                        Title = "PERSONA GUARDADA",
-                        Content = "La persona se ha guardado",
-                        CloseButtonText = "Confirmar"
-                    };
-
-                    ContentDialogResult respuesta = await mensajeConfirmacion.ShowAsync();
-
-                    //new RelayCommand(() =>
-                    //{
-                    //    new NavigationService().NavigateTo(nameof(VistaPersona));
-                    //});
-                }
-            }
-            catch
-            {
-                ContentDialog mensajeExito = new ContentDialog()
-                {
-                    Title = "ERROR",
-                    Content = "No se ha guardado la persona correctamente",
-                    SecondaryButtonText = "Volver"
-                };
-
-                ContentDialogResult resultado = await mensajeExito.ShowAsync();
-            }
-            
+            if (OPersona.IdDepartamento == 0)
+                OPersona.IdDepartamento = 1; //Seteamos el departamento al epartamento por defecto
         }
+        /// <summary>
+        /// Cabecera: private bool SePuedeGuardar()
+        /// Descripcion: Habilitar y deshabilitar el Command de Guardar si se han rellenado los campos requeridos
+        /// Precondiciones: ninguna
+        /// Postcondiciones:ninguna
+        /// </summary>
+        /// <returns> Un buleano que indica si se debe habilitar el boton de guardar</returns>
+
         private bool SePuedeGuardar()
         {
             return (!String.IsNullOrEmpty(OPersona.Nombre) && !String.IsNullOrEmpty(OPersona.Apellidos));

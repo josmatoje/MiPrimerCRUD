@@ -84,7 +84,7 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels.Utilidades
                 fichero = value;
                 rellenarArray();
                 //Setter de arrayFoto setea bitmapimage y sourceimage
-                rellenarImagen();
+                //rellenarImagen();
             }
         }
         #endregion
@@ -92,6 +92,9 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels.Utilidades
         public clsImagen() {}
         #endregion
         #region metodos privados
+        /// <summary>
+        /// Rellena la imagen ArrayBFoto desde el fichero
+        /// </summary>
         private async void rellenarArray()
         {
             if (Fichero != null)

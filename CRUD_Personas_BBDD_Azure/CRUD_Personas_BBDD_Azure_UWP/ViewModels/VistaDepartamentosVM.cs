@@ -82,6 +82,12 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
         }
         #endregion
         #region comands
+        /// <summary>
+        /// Cabecera: private void Buscar()
+        /// Descripcion: Metodo que filtra la lista de departamentos segun los datos introducidos
+        /// Precondiciones: ninguna
+        /// Postcondiciones:ninguna
+        /// </summary>
         private void Buscar()
         {
             ListaDepartamentoOfrecida = new ObservableCollection<clsDepartamento>(from departamento in ListaDepartamentoOfrecida
@@ -89,14 +95,33 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
                                                                         select departamento);
             NotifyPropertyChanged("ListaPersonaOfrecido");
         }
+        /// <summary>
+        /// Cabecera: private bool SePuedeBuscar()
+        /// Descripcion: Metodo necesario para habilitar y deshabilitar el Command de buscar
+        /// Precondiciones: ninguna
+        /// Postcondiciones:ninguna
+        /// </summary>
+        /// <returns> Un buleano que indica si se debe habilitar el boton de buscar</returns>
         private bool SePuedeBuscar()
         {
             return !String.IsNullOrEmpty(TextBoxBuscar);
         }
+        /// <summary>
+        /// Cabecera: private void Editar()
+        /// Descripcion: Metodo que sirve como funcion para construir el delegateComand
+        /// Precondiciones: ninguna
+        /// Postcondiciones:ninguna
+        /// </summary>
         private void Editar()
         {
             //Habilita edicion
         }
+        /// <summary>
+        /// Cabecera: private void Eliminar()
+        /// Descripcion: Muestra un mensaje para pedir la confirmacion de eliminar el departamento indicado y, en caso afirmativo, la elimina
+        /// Precondiciones: ninguna
+        /// Postcondiciones:ninguna
+        /// </summary>
         private async void Eliminar()
         {
             ContentDialog mensajeConfirmacion = new ContentDialog()
@@ -131,7 +156,13 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
                 }
             }
         }
-
+        /// <summary>
+        /// Cabecera: private bool SePuedeEliminararEditar()
+        /// Descripcion: Metodo necesario para habilitar y deshabilitar el Command de elimitar y editar
+        /// Precondiciones: ninguna
+        /// Postcondiciones:ninguna
+        /// </summary>
+        /// <returns> Un buleano que indica si se debe habilitar el boton de editar y el de eliminar</returns>
         private bool SePuedeEditarEliminarar()
         {
             return !(DepartamentoSeleccionado is null || DepartamentoSeleccionado.ID==1);

@@ -956,25 +956,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jmmata\\.nuget\\packages\\": {},
+    "C:\\Users\\josem\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\jmmata\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\BussinesLogic\\CRUD_Personas_BL.csproj",
+      "projectUniqueName": "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\BussinesLogic\\CRUD_Personas_BL.csproj",
       "projectName": "CRUD_Personas_BL",
-      "projectPath": "D:\\jmmata\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\BussinesLogic\\CRUD_Personas_BL.csproj",
-      "packagesPath": "C:\\Users\\jmmata\\.nuget\\packages\\",
-      "outputPath": "D:\\jmmata\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\BussinesLogic\\obj\\",
+      "projectPath": "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\BussinesLogic\\CRUD_Personas_BL.csproj",
+      "packagesPath": "C:\\Users\\josem\\.nuget\\packages\\",
+      "outputPath": "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\BussinesLogic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\jmmata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\josem\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -990,11 +990,11 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "D:\\jmmata\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\DAL\\CRUD_Personas_DAL.csproj": {
-              "projectPath": "D:\\jmmata\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\DAL\\CRUD_Personas_DAL.csproj"
+            "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\DAL\\CRUD_Personas_DAL.csproj": {
+              "projectPath": "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\DAL\\CRUD_Personas_DAL.csproj"
             },
-            "D:\\jmmata\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\Entities\\CRUD_Personas_Entities.csproj": {
-              "projectPath": "D:\\jmmata\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\Entities\\CRUD_Personas_Entities.csproj"
+            "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\Entities\\CRUD_Personas_Entities.csproj": {
+              "projectPath": "D:\\GS DAM\\Repositorios\\MiPrimerCRUD\\CRUD_Personas_BBDD_Azure\\Entities\\CRUD_Personas_Entities.csproj"
             }
           }
         }

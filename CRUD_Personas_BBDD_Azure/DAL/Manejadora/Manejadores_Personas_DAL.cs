@@ -84,7 +84,7 @@ namespace CRUD_Personas_DAL.Manejadora
             instruccion.Parameters.AddWithValue("@fechaNacimiento", (personaEditada.FechaNacimiento == null || personaEditada.FechaNacimiento == DateTime.MinValue) ? System.Data.SqlTypes.SqlDateTime.Null : personaEditada.FechaNacimiento);
             instruccion.Parameters.AddWithValue("@telefono", (personaEditada.Telefono == null) ? System.Data.SqlTypes.SqlString.Null : personaEditada.Telefono);
             instruccion.Parameters.AddWithValue("@direccion", (personaEditada.Direccion == null) ? System.Data.SqlTypes.SqlString.Null : personaEditada.Direccion);
-            instruccion.Parameters.AddWithValue("@IDDepartamento", personaEditada.IdDepartamento);
+            instruccion.Parameters.AddWithValue("@IDDepartamento", personaEditada.IdDepartamento == 0 ? 1 : personaEditada.IdDepartamento);
             instruccion.Parameters.AddWithValue("@Foto", (personaEditada.Foto == null) ? System.Data.SqlTypes.SqlBinary.Null : personaEditada.Foto);
             numFilasAfectadas = instruccion.ExecuteNonQuery();
             conexionDAL.cerrarConexion();

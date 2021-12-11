@@ -28,7 +28,11 @@ namespace CRUD_Personas_BBDD_Azure_UWP
             this.InitializeComponent();
             contenedor.Navigate(typeof(Bienvenida));
         }
-
+        /// <summary>
+        /// Evento que controla el NavigationViewItem sobre el que se hace click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="args"></param>
         private void EleccionPrincipal_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
         {
             NavigationViewItem paginaSeleccionada = (NavigationViewItem)sender.SelectedItem;

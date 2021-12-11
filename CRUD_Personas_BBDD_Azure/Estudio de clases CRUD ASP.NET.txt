@@ -72,6 +72,37 @@ Views:
 	VistaAnhadirEditarDepartamentos: vista para editar o crear un nuevo departamento
 ViewModel:
 	Utilidades: 
+		clsVMBase: clase que implementa INotifyPropertyChanged
+		DelegateComand: clase que genera un Delegate Comand con las implementaciones necesarias
+		clsImagen: clase que almacena y convierte una imagen en distintos formatos
+			atributos: ArrayBytes, Bitmap, ImageSource, StorageFile
+		clsDateConverter: clase que se utiliza para convertir un DateTime a DateTimeFormat
+		clsShortDateConverter: clase que se utiliza para convertir un DateTime a un string con formato ShortDate
+	VistaPersonaVM:
+		atributos: DelegateCommand buscador, editor, eliminador,
+			List <clsPersona> listaPersonaCompleto, 
+			ObservableCollection<PersonaNombreDepartamento> listaPersonaOfrecido,
+			List<clsDepartamento> listaDepartamentos, 
+			string textBoxBuscar, 
+			PersonaNombreDepartamento personaSeleccionada, 
+			clsImagen oImagen
+		Metodos de los delegate Comands
+	VistaDepartamentoVM:
+		atributos: DelegateCommand buscador, editor, eliminador,
+			ObservableCollection<clsPersona> listaPersonaCompleto, listaPersonaOfrecido,
+			ObservableCollection<clsDepartamento> listaDepartamentosCompleto, ListadoDepartamentoOfrecido 
+			string textBoxBuscar, 
+			clsDepartamento departamentoSeleccionado
+		Metodos de los DelegateComands
+	VistaAnhadirEditarPersonaVM:
+		atributos: ObservableCollection<clsDepartamento> listaDepartamentos,
+        			clsPersona oPersona,
+        			clsImagen foto,
+        			DelegateCommand seleccionarFoto, guardarFoto,
+        			string tipo
+	VistaAnhadirEditarDepartamentoVM:
+		atributos: clsDepartamento nuevoDepoartamento
+        			DelegateCommand guardarFoto
 Model:
 	PersonaNombreDepartamento (hereda de clsPersona)
 	atributo: string nombreDepartamento

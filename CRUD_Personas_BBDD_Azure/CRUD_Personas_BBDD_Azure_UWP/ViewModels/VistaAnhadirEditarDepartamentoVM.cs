@@ -28,9 +28,6 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
         public DelegateCommand Guardador { get => guardador; }
         #endregion
         #region Comands
-        /// <summary>
-        /// 
-        /// </summary>
         private async void Guardar()
         {
             //TODO: unificar el metodo de insercion y edicion en la DAL
@@ -48,6 +45,14 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
 
             ContentDialogResult respuesta = await mensajeConfirmacion.ShowAsync();
         }
+        /// <summary>
+        /// Cabecera: private bool SePuedeGuadar()
+        /// Descripcion: habilitar y deshabilitar el Command de guardar si se han rellenado los campos requeridos
+        /// Precondiciones: ninguna
+        /// Postcondiciones:ninguna
+        /// </summary>
+        /// <returns> Un buleano que indica si se debe habilitar el boton de guardar</returns>
+
         private bool SePuedeGuardar()
         {
             return !String.IsNullOrEmpty(NuevoDepartamento.Nombre);

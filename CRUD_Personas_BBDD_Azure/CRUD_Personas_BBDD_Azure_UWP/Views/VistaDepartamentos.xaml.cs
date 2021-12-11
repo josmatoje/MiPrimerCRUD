@@ -28,16 +28,29 @@ namespace CRUD_Personas_BBDD_Azure_UWP.Views
         {
             this.InitializeComponent();
         }
-
+        /// <summary>
+        /// Evento que muestra la vista VistaAnhadirEditarDepartamento
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Anhadir_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(VistaAnhadirEditarDepartamento));
         }
+        /// <summary>
+        /// Evento  que muestra la vista VistaAnhadirEditarDepartamento con la persona a editar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Editar_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(VistaAnhadirEditarDepartamento), (this.DataContext as VistaDepartamentosVM).DepartamentoSeleccionado as clsDepartamento);
         }
-
+        /// <summary>
+        /// Evento que envia a la VistaPersona en la que se ha hecho doble Click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void listadoPersonas_DoubleTapped(object sender, DoubleTappedRoutedEventArgs e)
         {
             clsPersona oPersona = ((ListView)sender).SelectedItem as clsPersona;
