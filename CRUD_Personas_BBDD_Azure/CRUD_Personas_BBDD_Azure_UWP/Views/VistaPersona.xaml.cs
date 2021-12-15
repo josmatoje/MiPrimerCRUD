@@ -72,6 +72,7 @@ namespace CRUD_Personas_BBDD_Azure_UWP.Views
         private void Editar_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(VistaAnhadirEditarPersona), (this.DataContext as VistaPersonasVM).PersonaSeleccionada as clsPersona);
+            //this.Frame.Navigate(typeof(VistaAnhadirEditarPersona), lista.SelectedItem as clsPersona);
         }
     }
 }

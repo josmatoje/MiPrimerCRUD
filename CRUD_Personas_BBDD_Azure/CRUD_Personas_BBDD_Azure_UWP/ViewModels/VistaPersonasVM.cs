@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using CRUD_Personas_BBDD_Azure_UWP.Model;
 using CRUD_Personas_BBDD_Azure_UWP.Views;
+using Windows.UI.Xaml;
 
 namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
 {
@@ -167,6 +168,10 @@ namespace CRUD_Personas_BBDD_Azure_UWP.ViewModels
         /// </summary>
         private void Editar()
         {
+            //Sirve para el cambio de vista desde el viewModel
+            //Frame rootFrame = Window.Current.Content as Frame;
+            //rootFrame.Navigate(typeof(VistaAnhadirEditarPersona),personaSeleccionada);
+
             //Habilita edicion
         }
         /// <summary>
