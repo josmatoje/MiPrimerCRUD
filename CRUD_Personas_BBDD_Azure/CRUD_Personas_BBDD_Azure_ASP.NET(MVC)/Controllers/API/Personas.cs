@@ -3,6 +3,8 @@ using CRUD_Personas_BL.Manejadoras;
 using CRUD_Personas_Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Net;
+using System.Web.Http;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -16,7 +18,18 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers.API
         [HttpGet]
         public IEnumerable<clsPersona> Get()
         {
-            return Listados_Personas_BL.Listado_Completo_Personas_BL();
+            List<clsPersona> listado;
+
+            try
+            {
+                listado = Listados_Personas_BL.Listado_Completo_Personas_BL();
+            }
+            catch
+            {
+                throw new HttpResponseException(HttpStatusCode.NoContent);
+            }
+
+            return listado;
         }
 
         // GET api/<Personas>/5
