@@ -1,1 +1,0 @@
-D:\GS DAM\Repositorios\MiPrimerCRUD\CRUD_Personas_BBDD_Azure\CRUD_Personas_BBDD_Azure_UWP\CRUD_Personas_BBDD_Azure_UWP.csproj;x86

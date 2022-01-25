@@ -26,7 +26,7 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers.API
             }
             catch
             {
-                throw new HttpResponseException(HttpStatusCode.NoContent);
+                throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
             }
 
             return listado;
@@ -36,30 +36,62 @@ namespace CRUD_Personas_BBDD_Azure_ASP.NET_MVC_.Controllers.API
         [HttpGet("{id}")]
         public clsPersona Get(int id)
         {
-            return Listados_Personas_BL.PersonaIndicada_BL(id);
+            clsPersona clsPersona;
+
+            try
+            {
+                clsPersona = Listados_Personas_BL.PersonaIndicada_BL(id);
+            }
+            catch
+            {
+                throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
+            }
+            return clsPersona;
         }
 
         // POST api/<Personas>
         [HttpPost]
         public void Post([FromBody] clsPersona persona)
         {
-            Manejadores_Personas_BL.Insertar_Persona_BL(persona);
+            try
+            {
+                if(Manejadores_Personas_BL.Insertar_Persona_BL(persona)==0)
+                    throw new HttpResponseException(HttpStatusCode.NoContent);
+            }
+            catch
+            {
+                throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
+            }
         }
 
         // PUT api/<Personas>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] clsPersona persona)
         {
-
-            Manejadores_Personas_BL.Editar_Persona_BL(persona);
+            try
+            {
+                if (Manejadores_Personas_BL.Editar_Persona_BL(persona) == 0)
+                    throw new HttpResponseException(HttpStatusCode.NoContent);
+            }
+            catch
+            {
+                throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
+            }
         }
 
         // DELETE api/<Personas>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-
-            Manejadores_Personas_BL.Borrar_Persona_BL(id);
+            try
+            {
+                if (Manejadores_Personas_BL.Borrar_Persona_BL(id) == 0)
+                    throw new HttpResponseException(HttpStatusCode.NoContent);
+            }
+            catch
+            {
+                throw new HttpResponseException(HttpStatusCode.ServiceUnavailable);
+            }
         }
     }
 }
